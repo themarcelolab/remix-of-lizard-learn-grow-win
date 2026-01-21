@@ -48,7 +48,9 @@ const Footer = () => {
             {/* Social Links */}
             <div className="flex items-center gap-4">
               <a 
-                href="#" 
+                href="https://www.instagram.com/lizardsapp/" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-lizard-purple/10 flex items-center justify-center hover:bg-lizard-purple/20 transition-colors"
                 aria-label="Instagram"
               >
