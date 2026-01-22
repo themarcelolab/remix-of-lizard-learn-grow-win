@@ -29,9 +29,11 @@ const Hero = () => {
                 Começar agora
               </Button>
             </a>
-            <Button variant="heroOutline" size="lg">
-              Ver como funciona
-            </Button>
+            <a href="https://wa.me/5551997930490" target="_blank" rel="noopener noreferrer">
+              <Button variant="heroOutline" size="lg">
+                Ver como funciona
+              </Button>
+            </a>
           </div>
 
           {/* Stats */}
