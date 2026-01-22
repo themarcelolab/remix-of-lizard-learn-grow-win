@@ -24,9 +24,11 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-2">
-            <Button variant="hero" size="lg">
-              Começar agora
-            </Button>
+            <a href="https://wa.me/5551997930490" target="_blank" rel="noopener noreferrer">
+              <Button variant="hero" size="lg">
+                Começar agora
+              </Button>
+            </a>
             <Button variant="heroOutline" size="lg">
               Ver como funciona
             </Button>
