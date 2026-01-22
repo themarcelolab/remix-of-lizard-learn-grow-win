@@ -28,7 +28,6 @@ const Hero = () => {
               Começar agora
             </Button>
             <Button variant="heroOutline" size="lg">
-              <Play className="mr-2" size={18} />
               Ver como funciona
             </Button>
           </div>
