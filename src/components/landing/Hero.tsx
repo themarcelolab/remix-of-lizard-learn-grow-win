@@ -26,7 +26,6 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-2">
             <Button variant="hero" size="lg">
               Começar agora
-              <ArrowRight className="ml-2" />
             </Button>
             <Button variant="heroOutline" size="lg">
               <Play className="mr-2" size={18} />
