@@ -24,7 +24,6 @@ const Footer = () => {
                 <Button variant="hero" size="lg" className="gap-3">
                   <Apple className="w-5 h-5" />
                   App Store
-                  <ArrowRight className="w-4 h-4" />
                 </Button>
                 <Button variant="heroOutline" size="lg" className="gap-3">
                   <Smartphone className="w-5 h-5" />
