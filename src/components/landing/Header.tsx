@@ -41,11 +41,12 @@ const Header = () => {
             </a>
           </nav>
 
-          {/* Desktop CTA */}
           <div className="hidden md:block">
-            <Button variant="default">
-              Começar agora
-            </Button>
+            <a href="https://wa.me/5551997930490" target="_blank" rel="noopener noreferrer">
+              <Button variant="default">
+                Começar agora
+              </Button>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -80,9 +81,11 @@ const Header = () => {
               <a href="/#preco" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-2">
                 Preço
               </a>
-              <Button variant="default" className="w-full mt-2">
-                Começar agora
-              </Button>
+              <a href="https://wa.me/5551997930490" target="_blank" rel="noopener noreferrer" className="w-full mt-2">
+                <Button variant="default" className="w-full">
+                  Começar agora
+                </Button>
+              </a>
             </nav>
           </div>
         )}
