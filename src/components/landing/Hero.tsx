@@ -57,11 +57,11 @@ const Hero = () => {
 
         {/* App mockup below - centered */}
         <div className="mt-12 md:mt-16 flex justify-center">
-          <div className="relative">
-            <img src={appMockup} alt="Lizard App - Interface de aprendizado" className="w-64 sm:w-72 md:w-80 lg:w-96 drop-shadow-2xl rounded-3xl" />
+          <div className="relative max-w-3xl mx-auto">
+            <img src={appMockup} alt="Lizard App - Interface de aprendizado com tema claro e escuro" className="w-full drop-shadow-2xl" />
             
             {/* Floating cards */}
-            <div className="absolute -left-4 sm:-left-8 top-16 sm:top-20 glass-card p-2 sm:p-3 rounded-xl shadow-card animate-bounce-slow">
+            <div className="absolute -left-2 sm:-left-6 top-1/4 glass-card p-2 sm:p-3 rounded-xl shadow-card animate-bounce-slow">
               <div className="flex items-center gap-2">
                 <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-lizard-green/20 flex items-center justify-center">
                   <span className="text-lizard-green text-sm sm:text-lg">✓</span>
@@ -73,7 +73,7 @@ const Hero = () => {
               </div>
             </div>
 
-            <div className="absolute -right-2 sm:-right-4 bottom-24 sm:bottom-32 glass-card p-2 sm:p-3 rounded-xl shadow-card animate-bounce-slow animate-delay-300">
+            <div className="absolute -right-2 sm:-right-6 top-1/2 glass-card p-2 sm:p-3 rounded-xl shadow-card animate-bounce-slow animate-delay-300">
               <div className="flex items-center gap-2">
                 <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-lizard-orange/20 flex items-center justify-center">
                   <span className="text-sm sm:text-lg">🔥</span>
