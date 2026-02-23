@@ -85,7 +85,7 @@ const Footer = () => {
             {/* Links */}
             <div className="flex items-center gap-6 text-sm text-muted-foreground">
               <a href="#" className="hover:text-lizard-purple transition-colors">Termos de Uso</a>
-              <a href="#" className="hover:text-lizard-orange transition-colors">Política de Privacidade</a>
+              <a href="/politicadeprivacidade" className="hover:text-lizard-orange transition-colors">Política de Privacidade</a>
               <a href="#" className="hover:text-lizard-green transition-colors">Contato</a>
             </div>
           </div>
