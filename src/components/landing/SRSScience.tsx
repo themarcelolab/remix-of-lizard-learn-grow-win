@@ -107,13 +107,7 @@ const SRSScience = () => {
                     <Icon className="w-6 h-6" style={{ color: `hsl(var(--${topic.color}))` }} />
                   </div>
                   <div>
-                    <span
-                      className="text-sm font-bold tracking-widest uppercase"
-                      style={{ color: `hsl(var(--${topic.color}))` }}
-                    >
-                      {topic.number}
-                    </span>
-                    <h3 className="text-xl md:text-2xl font-bold mt-1">{topic.title}</h3>
+                    <h3 className="text-xl md:text-2xl font-bold">{topic.title}</h3>
                     <p className="text-muted-foreground mt-1">{topic.subtitle}</p>
                   </div>
                 </div>
