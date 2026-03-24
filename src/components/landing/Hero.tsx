@@ -20,7 +20,7 @@ const Hero = () => {
           </h1>
 
           <p className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto">
-            Construa um vocabulário sólido com um sistema que fixa palavras no longo prazo.
+            Não acreditamos em fórmulas mágicas, mas sim em tecnologia adaptativa.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-2">
