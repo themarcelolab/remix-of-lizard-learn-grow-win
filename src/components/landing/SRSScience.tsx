@@ -1,0 +1,150 @@
+import { useEffect, useRef, useState } from "react";
+import { Brain, Clock, MessageSquareText } from "lucide-react";
+
+const topics = [
+  {
+    icon: Brain,
+    number: "01",
+    title: 'O Combate à "Curva do Esquecimento"',
+    subtitle: "O maior trunfo do SRS é impedir que o cérebro descarte a informação.",
+    color: "lizard-purple",
+    points: [
+      {
+        label: "Retenção de 95%",
+        text: "Estudos indicam que revisões diárias programadas via SRS podem elevar as taxas de retenção para até 95%, enquanto no aprendizado sem reforço, as pessoas esquecem cerca de 50% do que aprendem em apenas uma hora e 70% em 24 horas.",
+      },
+      {
+        label: "Memória de Longo Prazo",
+        text: 'O SRS atua transferindo o conhecimento da memória de curto prazo para a de longo prazo de forma sistemática, "ensinando" ao cérebro que aquela frase cotidiana é vital.',
+      },
+    ],
+  },
+  {
+    icon: Clock,
+    number: "02",
+    title: "Eficiência de Tempo e Esforço",
+    subtitle: "Para um usuário comum, o tempo é o recurso mais escasso. O SRS otimiza cada minuto.",
+    color: "lizard-green",
+    points: [
+      {
+        label: "Regra de 1 para 120",
+        text: "Em termos de eficiência, uma hora de estudo com repetição espaçada pode gerar os mesmos resultados de retenção que quatro meses de estudo tradicional repetitivo.",
+      },
+      {
+        label: "Foco no que é Difícil",
+        text: "O algoritmo prioriza automaticamente os cards que o aluno tem dificuldade, evitando que ele perca tempo revisando o que já sabe (o que aumenta o engajamento e evita o tédio).",
+      },
+    ],
+  },
+  {
+    icon: MessageSquareText,
+    number: "03",
+    title: "O Poder das Frases vs. Palavras Soltas",
+    subtitle: "Como o projeto foca em frases úteis, esse é um diferencial técnico enorme.",
+    color: "lizard-orange",
+    points: [
+      {
+        label: "Gramática Implícita",
+        text: "Aprender através de frases completas permite que o cérebro absorva a gramática de forma intuitiva e automática, sem a necessidade de decorar regras abstratas.",
+      },
+      {
+        label: "Contexto Real",
+        text: "Frases preparam o aluno para a produção ativa (falar). Estudos mostram que alunos que praticam sentenças constroem fluência muito mais rápido do que aqueles que apenas memorizam listas de vocabulário isolado.",
+      },
+    ],
+  },
+];
+
+const SRSScience = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) setIsVisible(true);
+      },
+      { threshold: 0.1 }
+    );
+    if (sectionRef.current) observer.observe(sectionRef.current);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <section ref={sectionRef} className="py-20 md:py-32">
+      <div className="container mx-auto px-4">
+        <div className="max-w-4xl mx-auto text-center mb-16">
+          <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
+            Metodologia
+          </span>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter mb-4">
+            A ciência por trás do <span className="gradient-brand-text">SRS</span>
+          </h2>
+          <p className="text-xl text-muted-foreground">
+            Entenda por que a repetição espaçada é o método mais eficaz para fixar conhecimento.
+          </p>
+        </div>
+
+        <div className="max-w-5xl mx-auto space-y-8">
+          {topics.map((topic, index) => {
+            const Icon = topic.icon;
+            return (
+              <div
+                key={index}
+                className="group relative bg-card rounded-2xl border p-8 md:p-10 transition-all duration-700 hover:shadow-lg"
+                style={{
+                  opacity: isVisible ? 1 : 0,
+                  transform: isVisible ? "translateY(0)" : "translateY(40px)",
+                  transitionDelay: `${index * 150}ms`,
+                  borderColor: `hsl(var(--${topic.color}) / 0.2)`,
+                }}
+              >
+                <div className="flex items-start gap-5 mb-6">
+                  <div
+                    className="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center"
+                    style={{ backgroundColor: `hsl(var(--${topic.color}) / 0.1)` }}
+                  >
+                    <Icon className="w-6 h-6" style={{ color: `hsl(var(--${topic.color}))` }} />
+                  </div>
+                  <div>
+                    <span
+                      className="text-sm font-bold tracking-widest uppercase"
+                      style={{ color: `hsl(var(--${topic.color}))` }}
+                    >
+                      {topic.number}
+                    </span>
+                    <h3 className="text-xl md:text-2xl font-bold mt-1">{topic.title}</h3>
+                    <p className="text-muted-foreground mt-1">{topic.subtitle}</p>
+                  </div>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-6 pl-0 md:pl-17">
+                  {topic.points.map((point, pIndex) => (
+                    <div
+                      key={pIndex}
+                      className="rounded-xl p-5 border"
+                      style={{
+                        backgroundColor: `hsl(var(--${topic.color}) / 0.03)`,
+                        borderColor: `hsl(var(--${topic.color}) / 0.1)`,
+                      }}
+                    >
+                      <h4
+                        className="font-bold mb-2"
+                        style={{ color: `hsl(var(--${topic.color}))` }}
+                      >
+                        {point.label}
+                      </h4>
+                      <p className="text-muted-foreground text-sm leading-relaxed">{point.text}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default SRSScience;

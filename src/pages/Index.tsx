@@ -3,6 +3,7 @@ import Hero from "@/components/landing/Hero";
 import Problem from "@/components/landing/Problem";
 import AnimatedPhrase from "@/components/landing/AnimatedPhrase";
 import Benefits from "@/components/landing/Benefits";
+import SRSScience from "@/components/landing/SRSScience";
 import BrandImage from "@/components/landing/BrandImage";
 import Prizes from "@/components/landing/Prizes";
 import Timeline from "@/components/landing/Timeline";
@@ -21,6 +22,7 @@ const Index = () => {
           <Benefits />
         </section>
         <BrandImage />
+        <SRSScience />
         <section id="premios">
           <Prizes />
         </section>
