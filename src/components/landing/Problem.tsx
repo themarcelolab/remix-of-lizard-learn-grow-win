@@ -61,10 +61,10 @@ const Problem = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter">
-            A <span className="gradient-lilac-text">ciência</span> por trás do seu <span className="gradient-brand-text-green-yellow">progresso</span>
+            A ciência por trás do seu <span className="gradient-brand-text-green-yellow">progresso</span>
           </h2>
           <p className="text-xl md:text-2xl text-muted-foreground tracking-tight">
-            Foi a forma como você aprendeu.
+            Não acreditamos em fórmulas mágicas, mas sim em tecnologia adaptativa.
           </p>
         </div>
 
