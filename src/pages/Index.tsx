@@ -22,6 +22,7 @@ const Index = () => {
           <Benefits />
         </section>
         <BrandImage />
+        <SRSScience />
         <section id="premios">
           <Prizes />
         </section>
