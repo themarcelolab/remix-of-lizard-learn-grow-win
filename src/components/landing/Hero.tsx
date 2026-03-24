@@ -16,7 +16,7 @@ const Hero = () => {
 
           <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tighter">
             Fluência é o seu próximo{" "}
-            <span className="gradient-brand-text-green-yellow">level</span>.
+            <span className="gradient-brand-text-green-yellow">level</span>
           </h1>
 
           <p className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto">
