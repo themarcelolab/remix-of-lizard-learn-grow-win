@@ -78,6 +78,9 @@ const Header = () => {
               <a href="/#beneficios" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-2">
                 Benefícios
               </a>
+              <a href="/#metodologia" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-2">
+                Metodologia
+              </a>
               <a href="/#premios" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-2">
                 Prêmios
               </a>
