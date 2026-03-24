@@ -15,7 +15,7 @@ const topics = [
       },
       {
         label: "Memória de Longo Prazo",
-        text: "O SRS atua transferindo o conhecimento da memória de curto prazo para a de longo prazo de forma sistemática, "ensinando" ao cérebro que aquela frase cotidiana é vital.",
+        text: 'O SRS atua transferindo o conhecimento da memória de curto prazo para a de longo prazo de forma sistemática, "ensinando" ao cérebro que aquela frase cotidiana é vital.',
       },
     ],
   },
