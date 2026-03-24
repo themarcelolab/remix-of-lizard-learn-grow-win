@@ -39,8 +39,8 @@ const Hero = () => {
           {/* Stats */}
           <div className="flex items-center gap-6 md:gap-8 justify-center pt-4">
             <div className="text-center">
-              <p className="text-xl md:text-2xl font-bold text-lizard-purple">+2000</p>
-              <p className="text-xs md:text-sm text-muted-foreground">palavras</p>
+              <p className="text-xl md:text-2xl font-bold text-lizard-purple">+5000</p>
+              <p className="text-xs md:text-sm text-muted-foreground">frases</p>
             </div>
             <div className="w-px h-8 md:h-10 bg-border" />
             <div className="text-center">
