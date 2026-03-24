@@ -99,17 +99,9 @@ const SRSScience = () => {
                   borderColor: `hsl(var(--${topic.color}) / 0.2)`,
                 }}
               >
-                <div className="flex items-start gap-5 mb-6">
-                  <div
-                    className="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center"
-                    style={{ backgroundColor: `hsl(var(--${topic.color}) / 0.1)` }}
-                  >
-                    <Icon className="w-6 h-6" style={{ color: `hsl(var(--${topic.color}))` }} />
-                  </div>
-                  <div>
+                <div className="mb-6">
                     <h3 className="text-xl md:text-2xl font-bold">{topic.title}</h3>
                     <p className="text-muted-foreground mt-1">{topic.subtitle}</p>
-                  </div>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-6 pl-0 md:pl-17">
