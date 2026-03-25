@@ -35,7 +35,7 @@ const Problem = () => {
   const cards = [
     {
       title: "Ciência Cognitiva",
-      description: "Criado com base em como a memória humana realmente funciona.",
+      description: "Criado com base em como a memória humana realmente funciona",
       color: "lizard-purple",
       bgColor: "bg-lizard-purple/5",
       borderColor: "border-lizard-purple/20",
