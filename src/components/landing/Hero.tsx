@@ -19,9 +19,7 @@ const Hero = () => {
             apenas <span className="gradient-brand-text-green-yellow">ciência</span>
           </h1>
 
-          <p className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto"><p className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto">Aprenda no seu ritmo, do básico ao avançado, com um método que respeita o seu tempo e a sua memória.
-
-        </p>
+          <p className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto">Aprenda no seu ritmo, do básico ao avançado, com um método que respeita o seu tempo e a sua memória.</p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-2">
             <a href="https://wa.me/5551997930490" target="_blank" rel="noopener noreferrer">
