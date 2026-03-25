@@ -64,7 +64,7 @@ const Problem = () => {
             A ciência por trás do seu <span className="gradient-brand-text-green-yellow">progresso</span>
           </h2>
           <p className="text-xl md:text-2xl text-muted-foreground tracking-tight">
-            Não acreditamos em fórmulas mágicas, mas sim em tecnologia adaptativa.
+            Não acreditamos em fórmulas mágicas, mas sim em tecnologia adaptativa
           </p>
         </div>
 
