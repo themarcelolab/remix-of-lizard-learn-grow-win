@@ -42,7 +42,7 @@ const Problem = () => {
     },
     {
       title: "Repetição Espaçada",
-      description: "Cada frase reaparece exatamente quando você está prestes a esquecê-la.",
+      description: "Cada frase reaparece exatamente quando você está prestes a esquecê-la",
       color: "lizard-orange",
       bgColor: "bg-lizard-orange/5",
       borderColor: "border-lizard-orange/20",
