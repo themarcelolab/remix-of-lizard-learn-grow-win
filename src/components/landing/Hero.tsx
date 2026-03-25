@@ -15,8 +15,8 @@ const Hero = () => {
           
 
           <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tighter">
-            Aprenda inglês sem truques,<br />
-            apenas <span className="gradient-brand-text-green-yellow">ciência.</span>
+            Inglês sem truques,<br />
+            apenas <span className="gradient-brand-text-green-yellow">ciência</span>
           </h1>
 
           <p className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto">Aprenda no seu ritmo, do básico ao avançado, com um método que respeita o seu tempo.
