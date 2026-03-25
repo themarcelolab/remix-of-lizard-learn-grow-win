@@ -49,7 +49,7 @@ const Problem = () => {
     },
     {
       title: "Progresso Real",
-      description: "Sem listas aleatórias – evolução mensurável e consistente.",
+      description: "Sem listas aleatórias. Com o Lizard, a evolução é mensurável e consistente.",
       color: "lizard-green",
       bgColor: "bg-lizard-green/5",
       borderColor: "border-lizard-green/20",
