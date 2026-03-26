@@ -74,9 +74,6 @@ const SRSScience = () => {
     <section ref={sectionRef} className="py-20 md:py-32">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-16">
-          <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
-            Metodologia
-          </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter mb-4">
             A ciência por trás do <span className="gradient-brand-text">SRS</span>
           </h2>
