@@ -69,7 +69,7 @@ const Prizes = () => {
               <div className="flex items-center gap-3">
                 <div>
                   <p className="font-bold">Próximo sorteio</p>
-                  <p className="text-sm text-muted-foreground">em 10.000 assinaturas</p>
+                  <p className="text-sm text-muted-foreground">em 1.000 assinantes</p>
                 </div>
               </div>
             </div>
