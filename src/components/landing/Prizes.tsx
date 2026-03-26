@@ -11,9 +11,6 @@ const Prizes = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left content */}
           <div className="space-y-8">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-lizard-orange/15 text-lizard-orange text-sm font-medium border border-lizard-orange/30">
-              Prêmios Reais
-            </div>
 
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tighter">
               Prêmios liberados conforme a{" "}
