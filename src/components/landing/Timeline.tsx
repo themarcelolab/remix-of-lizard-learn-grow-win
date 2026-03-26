@@ -13,7 +13,7 @@ const timelineSteps = [
   {
     month: "3 meses",
     words: "+1.000 frases (A2/B1)",
-    description: "Compreensão de frases reais. Inglês começando a fazer sentido",
+    description: "Independência: Compreensão de cerca de 75% das palavras usadas em conversas nativas comuns. O inglês deixa de ser um ruído e passa a ter significado contextual",
     color: "bg-lizard-purple",
     textColor: "text-lizard-purple",
     borderColor: "border-lizard-purple",
