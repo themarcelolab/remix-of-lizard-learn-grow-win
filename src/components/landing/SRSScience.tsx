@@ -87,9 +87,6 @@ const SRSScience = () => {
             transform: isVisible ? "translateY(0)" : "translateY(30px)",
           }}
         >
-          <span className="inline-block text-sm font-semibold tracking-widest uppercase mb-4 px-4 py-1.5 rounded-full border" style={{ color: 'hsl(var(--lizard-green))', borderColor: 'hsl(var(--lizard-green) / 0.3)', backgroundColor: 'hsl(var(--lizard-green) / 0.06)' }}>
-            Metodologia
-          </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter mb-5">
             A ciência por trás do{" "}
             <span className="gradient-brand-text">SRS</span>
