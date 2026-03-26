@@ -48,7 +48,7 @@ const Hero = () => {
             <div className="w-px h-8 md:h-10 bg-border" />
             <div className="text-center">
               <p className="text-xl md:text-2xl font-bold text-lizard-green">SRS</p>
-              <p className="text-xs md:text-sm text-muted-foreground">método</p>
+              <p className="text-xs md:text-sm text-muted-foreground">foco em eficiência</p>
             </div>
           </div>
         </div>
