@@ -22,7 +22,7 @@ const topics = [
   {
     icon: Clock,
     number: "02",
-    title: "Eficiência de Tempo e Esforço",
+    title: "Eficiência de tempo e esforço",
     subtitle: "Para um usuário comum, o tempo é o recurso mais escasso. O SRS otimiza cada minuto.",
     color: "lizard-green",
     points: [
