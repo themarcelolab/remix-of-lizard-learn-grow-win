@@ -13,7 +13,7 @@ const Prizes = () => {
           <div className="space-y-8">
 
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tighter">
-              Prêmios liberados conforme a{" "}
+              Crescemos juntos,{" "}
               <span className="text-lizard-orange">ganhamos juntos</span>
             </h2>
 
