@@ -7,7 +7,7 @@ const topics = [
     number: "01",
     title: 'O combate à "Curva do Esquecimento"',
     subtitle: "O SRS impede que o cérebro descarte a informação",
-    color: "lizard-purple",
+    colorVar: "--lizard-purple",
     points: [
       {
         label: "Retenção de +90%",
@@ -24,7 +24,7 @@ const topics = [
     number: "02",
     title: "Eficiência de tempo e esforço",
     subtitle: "O tempo é o recurso mais escasso. O SRS otimiza cada minuto",
-    color: "lizard-green",
+    colorVar: "--lizard-green",
     points: [
       {
         label: "Regra de 1 para 120",
@@ -41,7 +41,7 @@ const topics = [
     number: "03",
     title: "O poder das Frases vs. Palavras Soltas",
     subtitle: "O Lizard foca em frases úteis. O que você aprende, você usa.",
-    color: "lizard-orange",
+    colorVar: "--lizard-orange",
     points: [
       {
         label: "Gramática implícita",
@@ -71,55 +71,103 @@ const SRSScience = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-20 md:py-32">
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter mb-4">
-            A ciência por trás do <span className="gradient-brand-text">SRS</span>
+    <section ref={sectionRef} className="py-20 md:py-32 relative overflow-hidden">
+      {/* Subtle background decoration */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-1/4 -left-32 w-64 h-64 rounded-full opacity-[0.04]" style={{ background: 'hsl(var(--lizard-purple))' }} />
+        <div className="absolute bottom-1/4 -right-32 w-64 h-64 rounded-full opacity-[0.04]" style={{ background: 'hsl(var(--lizard-green))' }} />
+      </div>
+
+      <div className="container mx-auto px-4 relative">
+        {/* Header */}
+        <div
+          className="max-w-3xl mx-auto text-center mb-20 transition-all duration-700"
+          style={{
+            opacity: isVisible ? 1 : 0,
+            transform: isVisible ? "translateY(0)" : "translateY(30px)",
+          }}
+        >
+          <span className="inline-block text-sm font-semibold tracking-widest uppercase mb-4 px-4 py-1.5 rounded-full border" style={{ color: 'hsl(var(--lizard-green))', borderColor: 'hsl(var(--lizard-green) / 0.3)', backgroundColor: 'hsl(var(--lizard-green) / 0.06)' }}>
+            Metodologia
+          </span>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter mb-5">
+            A ciência por trás do{" "}
+            <span className="gradient-brand-text">SRS</span>
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-lg text-muted-foreground max-w-xl mx-auto">
             Entenda por que a repetição espaçada é o método mais eficaz para fixar conhecimento
           </p>
         </div>
 
-        <div className="max-w-5xl mx-auto space-y-8">
+        {/* Topics */}
+        <div className="max-w-5xl mx-auto space-y-6">
           {topics.map((topic, index) => {
             const Icon = topic.icon;
+            const color = `hsl(var(${topic.colorVar}))`;
+            const colorLight = `hsl(var(${topic.colorVar}) / 0.08)`;
+            const colorBorder = `hsl(var(${topic.colorVar}) / 0.15)`;
+
             return (
               <div
                 key={index}
-                className="group relative bg-card rounded-2xl border p-8 md:p-10 transition-all duration-700 hover:shadow-lg"
+                className="group relative rounded-2xl border bg-background transition-all duration-700 hover:shadow-xl overflow-hidden"
                 style={{
                   opacity: isVisible ? 1 : 0,
                   transform: isVisible ? "translateY(0)" : "translateY(40px)",
                   transitionDelay: `${index * 150}ms`,
-                  borderColor: `hsl(var(--${topic.color}) / 0.2)`,
+                  borderColor: colorBorder,
                 }}
               >
-                <div className="mb-6">
-                    <h3 className="text-xl md:text-2xl font-bold">{topic.title}</h3>
-                    <p className="text-muted-foreground mt-1">{topic.subtitle}</p>
-                </div>
+                {/* Colored top accent bar */}
+                <div className="h-1 w-full" style={{ background: `linear-gradient(90deg, ${color}, transparent)` }} />
 
-                <div className="grid md:grid-cols-2 gap-6 pl-0 md:pl-17">
-                  {topic.points.map((point, pIndex) => (
+                <div className="p-8 md:p-10">
+                  {/* Header row */}
+                  <div className="flex items-start gap-5 mb-8">
                     <div
-                      key={pIndex}
-                      className="rounded-xl p-5 border"
-                      style={{
-                        backgroundColor: `hsl(var(--${topic.color}) / 0.03)`,
-                        borderColor: `hsl(var(--${topic.color}) / 0.1)`,
-                      }}
+                      className="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110"
+                      style={{ backgroundColor: colorLight, color }}
                     >
-                      <h4
-                        className="font-bold mb-2"
-                        style={{ color: `hsl(var(--${topic.color}))` }}
-                      >
-                        {point.label}
-                      </h4>
-                      <p className="text-muted-foreground text-sm leading-relaxed">{point.text}</p>
+                      <Icon className="w-6 h-6" strokeWidth={1.8} />
                     </div>
-                  ))}
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-xl md:text-2xl font-bold leading-tight">{topic.title}</h3>
+                      <p className="text-muted-foreground mt-1.5 text-sm md:text-base">{topic.subtitle}</p>
+                    </div>
+                    <span
+                      className="hidden md:flex flex-shrink-0 text-3xl font-black opacity-10 select-none"
+                      style={{ color }}
+                    >
+                      {topic.number}
+                    </span>
+                  </div>
+
+                  {/* Points grid */}
+                  <div className="grid md:grid-cols-2 gap-4 md:pl-[68px]">
+                    {topic.points.map((point, pIndex) => (
+                      <div
+                        key={pIndex}
+                        className="rounded-xl p-5 transition-all duration-300 hover:translate-y-[-2px]"
+                        style={{
+                          backgroundColor: colorLight,
+                          border: `1px solid ${colorBorder}`,
+                        }}
+                      >
+                        <div className="flex items-center gap-2 mb-2.5">
+                          <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: color }} />
+                          <h4
+                            className="font-semibold text-sm uppercase tracking-wide"
+                            style={{ color }}
+                          >
+                            {point.label}
+                          </h4>
+                        </div>
+                        <p className="text-muted-foreground text-sm leading-relaxed">
+                          {point.text}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
             );
