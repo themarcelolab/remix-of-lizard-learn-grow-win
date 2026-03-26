@@ -14,7 +14,7 @@ const Prizes = () => {
 
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tighter">
               Prêmios liberados conforme a{" "}
-              <span className="text-lizard-orange">comunidade cresce</span>
+              <span className="text-lizard-orange">ganhamos juntos</span>
             </h2>
 
             <p className="text-lg text-muted-foreground">
