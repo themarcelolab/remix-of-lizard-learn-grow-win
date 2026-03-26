@@ -33,7 +33,7 @@ const Prizes = () => {
             </div>
 
             <div className="space-y-4">
-              <p className="font-semibold text-lg">Exemplos de prêmios:</p>
+              <p className="font-semibold text-lg">Prêmios futuros:</p>
               <div className="flex flex-wrap gap-3">
                 <div className="flex items-center gap-2 px-4 py-3 rounded-full bg-lizard-orange/15 border border-lizard-orange/40">
                   <Plane className="w-5 h-5 text-lizard-orange" />
