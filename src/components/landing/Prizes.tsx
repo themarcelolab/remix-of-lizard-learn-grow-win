@@ -18,8 +18,9 @@ const Prizes = () => {
             </h2>
 
             <p className="text-lg text-muted-foreground">
-              No Lizard, aprender também é um jogo. Conforme a comunidade cresce, 
-              desbloqueamos desafios especiais com prêmios reais.
+              No Lizard, o seu progresso não fica apenas na tela do celular. 
+              Acreditamos que aprender inglês deve ser uma experiência coletiva e recompensadora. 
+              Por isso, cada meta alcançada pela nossa comunidade desbloqueia prêmios reais para os alunos.
             </p>
 
             <div className="bg-card p-6 rounded-2xl border border-lizard-orange/30 shadow-sm">
