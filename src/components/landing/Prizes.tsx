@@ -29,7 +29,7 @@ const Prizes = () => {
               <div>
                 <h4 className="font-bold text-lg mb-1 text-lizard-purple">Primeiro Marco</h4>
                 <p className="text-muted-foreground">
-                  Ao atingir 2.000 assinaturas, os usuários mais engajados participam 
+                  Ao atingir 10.000 assinaturas, os usuários mais engajados participam 
                   de um evento com premiação especial.
                 </p>
               </div>
@@ -72,7 +72,7 @@ const Prizes = () => {
               <div className="flex items-center gap-3">
                 <div>
                   <p className="font-bold">Próximo sorteio</p>
-                  <p className="text-sm text-muted-foreground">em 2.000 assinaturas</p>
+                  <p className="text-sm text-muted-foreground">em 10.000 assinaturas</p>
                 </div>
               </div>
             </div>
