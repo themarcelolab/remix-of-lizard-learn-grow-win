@@ -22,7 +22,7 @@ const timelineSteps = [
   {
     month: "6 meses",
     words: "+2.500 frases",
-    description: "Base sólida para conversação e leitura",
+    description: "Domínio: Você atinge a marca dos 90% de cobertura do inglês de uso geral. Capacidade sólida para comunicação, leitura e conversas sem pausas longas.",
     color: "bg-lizard-pink",
     textColor: "text-lizard-pink",
     borderColor: "border-lizard-pink",
