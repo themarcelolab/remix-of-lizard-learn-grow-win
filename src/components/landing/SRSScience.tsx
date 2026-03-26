@@ -39,7 +39,7 @@ const topics = [
   {
     icon: MessageSquareText,
     number: "03",
-    title: "O Poder das Frases vs. Palavras Soltas",
+    title: "O poder das Frases vs. Palavras Soltas",
     subtitle: "Como o projeto foca em frases úteis, esse é um diferencial técnico enorme.",
     color: "lizard-orange",
     points: [
