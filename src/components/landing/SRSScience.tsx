@@ -40,7 +40,7 @@ const topics = [
     icon: MessageSquareText,
     number: "03",
     title: "O poder das Frases vs. Palavras Soltas",
-    subtitle: "Como o projeto foca em frases úteis, esse é um diferencial técnico enorme.",
+    subtitle: "O Lizard foca em frases úteis. O que você aprende, você usa.",
     color: "lizard-orange",
     points: [
       {
