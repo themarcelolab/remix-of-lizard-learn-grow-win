@@ -17,7 +17,7 @@ const Pricing = () => {
           <div className="relative bg-card rounded-3xl shadow-2xl overflow-hidden">
             {/* Gradient header */}
             <div className="gradient-brand p-8 text-center">
-              <Sparkles className="w-10 h-10 text-primary-foreground mx-auto mb-4" />
+              
               <h2 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-2">
                 Construa vocabulário em inglês de forma definitiva.
               </h2>
