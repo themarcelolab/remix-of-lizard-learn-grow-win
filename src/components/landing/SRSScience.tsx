@@ -5,7 +5,7 @@ const topics = [
   {
     icon: Brain,
     number: "01",
-    title: 'O Combate à "Curva do Esquecimento"',
+    title: 'O combate à "Curva do Esquecimento"',
     subtitle: "O SRS impede que o cérebro descarte a informação",
     color: "lizard-purple",
     points: [
