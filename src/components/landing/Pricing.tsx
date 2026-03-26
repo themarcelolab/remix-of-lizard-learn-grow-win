@@ -3,7 +3,7 @@ import { Check, Sparkles } from "lucide-react";
 
 const features = [
   "Repetição inteligente (SRS)",
-  "+1.000 palavras ao longo do uso",
+  "+5.000 frases práticas",
   "Rotina flexível",
   "Gamificação com prêmios reais",
   "Acesso completo ao app",
