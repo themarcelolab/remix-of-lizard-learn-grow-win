@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import lifestyleImage from "@/assets/lifestyle-image.png";
 const benefits = [{
-  title: "Mais retenção de verdade",
-  description: "O método SRS pode gerar até 400% mais retenção quando comparado a métodos tradicionais.",
+  title: "Ciência da Memória (SRS)",
+  description: "Memorização inteligente, o algoritmo foca no reforço na hora certa, garantindo que você não esqueça o que aprendeu.",
   color: "lizard-purple",
   borderColor: "border-l-lizard-purple"
 }, {
