@@ -118,7 +118,7 @@ const Timeline = () => {
                     className={`flex-1 bg-card p-6 md:p-8 rounded-2xl shadow-card text-center md:text-left w-full border-2 ${step.borderColor}/30 transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-1`}
                   >
                     <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4 mb-3">
-                      <span className={`inline-block px-3 py-1 rounded-full ${step.color}/20 ${step.textColor} text-sm font-semibold`}>
+                      <span className={`inline-block px-3 py-1 rounded-full ${step.bgLight} ${step.textColor} text-sm font-semibold`}>
                         {step.month}
                       </span>
                       <span className={`text-xl font-bold ${step.textColor}`}>
