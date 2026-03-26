@@ -49,7 +49,7 @@ const topics = [
       },
       {
         label: "Contexto Real",
-        text: "Frases preparam o aluno para a produção ativa (falar). Estudos mostram que alunos que praticam sentenças constroem fluência muito mais rápido do que aqueles que apenas memorizam listas de vocabulário isolado.",
+        text: "Esqueça as listas infinitas de vocabulário. O cérebro aprende melhor por contexto. No Lizard, você domina frases prontas para o uso, acelerando sua fala e eliminando o medo de travar.",
       },
     ],
   },
