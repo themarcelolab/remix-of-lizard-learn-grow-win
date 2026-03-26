@@ -11,7 +11,7 @@ const topics = [
     points: [
       {
         label: "Retenção de +90%",
-        text: "Estudos indicam que revisões diárias programadas via SRS podem elevar as taxas de retenção para até 95%, enquanto no aprendizado sem reforço, as pessoas esquecem cerca de 50% do que aprendem em apenas uma hora e 70% em 24 horas.",
+        text: "Estudos mostram que revisões diárias programadas via SRS podem elevar as taxas de retenção para até 95%, enquanto no aprendizado sem reforço, as pessoas esquecem cerca de 50% do que aprendem em apenas uma hora e 70% em 24 horas.",
       },
       {
         label: "Memória de Longo Prazo",
