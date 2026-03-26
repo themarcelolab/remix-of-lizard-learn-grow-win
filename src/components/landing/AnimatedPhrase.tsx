@@ -21,7 +21,7 @@ const AnimatedPhrase = () => {
     return () => observer.disconnect();
   }, []);
 
-  const words = ["Inglês", "que", "respeita", "a", "sua", "memória."];
+  const words = ["Inglês", "que", "respeita", "a", "sua", "memória"];
   const colors = [
     "text-lizard-green",
     "text-foreground",
