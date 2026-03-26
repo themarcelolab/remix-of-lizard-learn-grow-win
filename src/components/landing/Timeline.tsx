@@ -6,6 +6,7 @@ const timelineSteps = [
     words: "+300 frases",
     description: "Sobrevivência: Você já não fica \"travado\" em situações básicas. Consegue se apresentar, pedir informações e entender comandos simples de apps e redes sociais.",
     color: "bg-lizard-orange",
+    bgLight: "bg-lizard-orange/20",
     textColor: "text-lizard-orange",
     borderColor: "border-lizard-orange",
     emoji: "🌱",
@@ -15,6 +16,7 @@ const timelineSteps = [
     words: "+1.000 frases",
     description: "Independência: Compreensão de cerca de 75% das palavras usadas em conversas nativas comuns. O inglês deixa de ser um ruído e passa a ter significado contextual.",
     color: "bg-lizard-purple",
+    bgLight: "bg-lizard-purple/20",
     textColor: "text-lizard-purple",
     borderColor: "border-lizard-purple",
     emoji: "🚀",
@@ -24,12 +26,12 @@ const timelineSteps = [
     words: "+2.500 frases",
     description: "Domínio: Você atinge a marca dos 90% de cobertura do inglês de uso geral. Capacidade sólida para comunicação, leitura e conversas sem pausas longas.",
     color: "bg-lizard-pink",
+    bgLight: "bg-lizard-pink/20",
     textColor: "text-lizard-pink",
     borderColor: "border-lizard-pink",
     emoji: "🏆",
   },
 ];
-
 const Timeline = () => {
   const [activeIndex, setActiveIndex] = useState(-1);
   const sectionRef = useRef<HTMLElement>(null);
@@ -116,7 +118,7 @@ const Timeline = () => {
                     className={`flex-1 bg-card p-6 md:p-8 rounded-2xl shadow-card text-center md:text-left w-full border-2 ${step.borderColor}/30 transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-1`}
                   >
                     <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4 mb-3">
-                      <span className={`inline-block px-3 py-1 rounded-full ${step.color}/20 ${step.textColor} text-sm font-semibold`}>
+                      <span className={`inline-block px-3 py-1 rounded-full ${step.bgLight} ${step.textColor} text-sm font-semibold`}>
                         {step.month}
                       </span>
                       <span className={`text-xl font-bold ${step.textColor}`}>
