@@ -6,7 +6,7 @@ const topics = [
     icon: Brain,
     number: "01",
     title: 'O Combate à "Curva do Esquecimento"',
-    subtitle: "O maior trunfo do SRS é impedir que o cérebro descarte a informação.",
+    subtitle: "O SRS impede que o cérebro descarte a informação",
     color: "lizard-purple",
     points: [
       {
