@@ -13,7 +13,7 @@ const timelineSteps = [
   {
     month: "3 meses",
     words: "+1.000 frases",
-    description: "Independência: Compreensão de cerca de 75% das palavras usadas em conversas nativas comuns. O inglês deixa de ser um ruído e passa a ter significado contextual",
+    description: "Independência: Compreensão de cerca de 75% das palavras usadas em conversas nativas comuns. O inglês deixa de ser um ruído e passa a ter significado contextual.",
     color: "bg-lizard-purple",
     textColor: "text-lizard-purple",
     borderColor: "border-lizard-purple",
