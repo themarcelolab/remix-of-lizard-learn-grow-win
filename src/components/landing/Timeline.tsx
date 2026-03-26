@@ -12,7 +12,7 @@ const timelineSteps = [
   },
   {
     month: "3 meses",
-    words: "+600 a 1000 palavras",
+    words: "+1.000 frases (A2/B1)",
     description: "Compreensão de frases reais. Inglês começando a fazer sentido",
     color: "bg-lizard-purple",
     textColor: "text-lizard-purple",
