@@ -21,7 +21,7 @@ const timelineSteps = [
   },
   {
     month: "6 meses",
-    words: "+1500 a 2500 palavras",
+    words: "+2.500 frases",
     description: "Base sólida para conversação e leitura",
     color: "bg-lizard-pink",
     textColor: "text-lizard-pink",
