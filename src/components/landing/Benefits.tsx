@@ -7,7 +7,7 @@ const benefits = [{
   borderColor: "border-l-lizard-purple"
 }, {
   title: "Fluência no mundo real",
-  description: "Aprenda mais de 2.000 palavras em menos de 6 meses de uso, com contexto e repetição inteligente.",
+  description: "Inglês útil, sem desperdício. Aprenda com mais de 5.000 cards focados no que realmente importa: o vocabulário essencial para falar com confiança.",
   color: "lizard-orange",
   borderColor: "border-l-lizard-orange"
 }, {
