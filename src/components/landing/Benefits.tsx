@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import lifestyleImage from "@/assets/lifestyle-image.png";
 const benefits = [{
   title: "Ciência da memória (SRS)",
-  description: "Memorização inteligente, o algoritmo foca no reforço na hora certa, garantindo que você não esqueça o que aprendeu",
+  description: "Memorização inteligente, o algoritmo foca no reforço na hora certa, garantindo que você não esqueça o que aprendeu.",
   color: "lizard-purple",
   borderColor: "border-l-lizard-purple"
 }, {
