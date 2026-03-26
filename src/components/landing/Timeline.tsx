@@ -4,7 +4,7 @@ const timelineSteps = [
   {
     month: "1 mês",
     words: "+300 frases (A1)",
-    description: "Base inicial formada e reconhecimento de vocabulário simples",
+    description: "Sobrevivência: Você já não fica \"travado\" em situações básicas. Consegue se apresentar, pedir informações e entender comandos simples de apps e redes sociais",
     color: "bg-lizard-orange",
     textColor: "text-lizard-orange",
     borderColor: "border-lizard-orange",
