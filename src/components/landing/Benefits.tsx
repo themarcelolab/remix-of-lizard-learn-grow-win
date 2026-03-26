@@ -11,7 +11,7 @@ const benefits = [{
   color: "lizard-orange",
   borderColor: "border-l-lizard-orange"
 }, {
-  title: "Rotina que se adapta a você",
+  title: "Tecnologia adaptativa",
   description: "O sistema ajusta o ritmo de estudo à sua disponibilidade e consistência.",
   color: "lizard-green",
   borderColor: "border-l-lizard-green"
