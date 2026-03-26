@@ -17,7 +17,7 @@ const benefits = [{
   borderColor: "border-l-lizard-green"
 }, {
   title: "Gamificação com prêmios reais",
-  description: "Aqui, esforço vira recompensa de verdade, não pontos que não valem nada.",
+  description: "Aqui, as conquistas vão além da tela. Esforço vira recompensa de verdade, não pontos que não valem nada.",
   color: "lizard-blue",
   borderColor: "border-l-lizard-blue"
 }];
