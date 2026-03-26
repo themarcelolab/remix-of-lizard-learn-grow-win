@@ -44,11 +44,11 @@ const topics = [
     color: "lizard-orange",
     points: [
       {
-        label: "Gramática Implícita",
+        label: "Gramática implícita",
         text: "Aprender através de frases completas permite que o cérebro absorva a gramática de forma intuitiva e automática, sem a necessidade de decorar regras abstratas.",
       },
       {
-        label: "Contexto Real",
+        label: "Contexto real",
         text: "Esqueça as listas infinitas de vocabulário. O cérebro aprende melhor por contexto. No Lizard, você domina frases prontas para o uso, acelerando sua fala e eliminando o medo de travar.",
       },
     ],
