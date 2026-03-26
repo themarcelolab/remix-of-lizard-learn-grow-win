@@ -12,7 +12,7 @@ const benefits = [{
   borderColor: "border-l-lizard-orange"
 }, {
   title: "Tecnologia adaptativa",
-  description: "O sistema ajusta o ritmo de estudo à sua disponibilidade e consistência.",
+  description: "Seu ritmo, suas regras. Usamos a tecnologia para ajustar o conteúdo e a frequência de estudos ao seu desempenho e disponibilidade.",
   color: "lizard-green",
   borderColor: "border-l-lizard-green"
 }, {
