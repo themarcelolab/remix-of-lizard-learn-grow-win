@@ -32,7 +32,7 @@ const topics = [
       },
       {
         label: "Foco no que é Difícil",
-        text: "O algoritmo prioriza automaticamente os cards que o aluno tem dificuldade, evitando que ele perca tempo revisando o que já sabe (o que aumenta o engajamento e evita o tédio).",
+        text: "O algoritmo prioriza os cards que o aluno tem dificuldade, evitando que ele perca tempo revisando o que já sabe (o que aumenta o engajamento e evita o tédio).",
       },
     ],
   },
