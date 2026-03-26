@@ -6,7 +6,7 @@ const benefits = [{
   color: "lizard-purple",
   borderColor: "border-l-lizard-purple"
 }, {
-  title: "Vocabulário que cresce de forma real",
+  title: "Fluência no mundo real",
   description: "Aprenda mais de 2.000 palavras em menos de 6 meses de uso, com contexto e repetição inteligente.",
   color: "lizard-orange",
   borderColor: "border-l-lizard-orange"
