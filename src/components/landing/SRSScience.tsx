@@ -1,92 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Brain, Clock, MessageSquareText, Zap, Target, BookOpen } from "lucide-react";
-
-const bentoItems = [
-  {
-    icon: Brain,
-    number: "01",
-    title: 'O combate à "Curva do Esquecimento"',
-    subtitle: "O SRS impede que o cérebro descarte a informação",
-    colorVar: "--lizard-purple",
-    stat: "95%",
-    statLabel: "de retenção",
-    points: [
-      {
-        label: "Retenção de +90%",
-        text: "Revisões diárias programadas via SRS elevam as taxas de retenção para até 95%. Sem reforço, esquecemos 70% em 24h.",
-      },
-      {
-        label: "Memória de Longo Prazo",
-        text: 'O SRS transfere o conhecimento da memória de curto prazo para a de longo prazo, "ensinando" ao cérebro que aquela informação é importante.',
-      },
-    ],
-    gridClass: "md:col-span-2 md:row-span-2",
-  },
-  {
-    icon: Clock,
-    number: "02",
-    title: "Eficiência de tempo",
-    subtitle: "O SRS otimiza cada minuto do seu estudo",
-    colorVar: "--lizard-green",
-    stat: "1h",
-    statLabel: "= 4 meses",
-    points: [
-      {
-        label: "Regra de 1 para 120",
-        text: "Uma hora de estudo com repetição espaçada gera os mesmos resultados de retenção que quatro meses de estudo tradicional.",
-      },
-    ],
-    gridClass: "md:col-span-1 md:row-span-1",
-  },
-  {
-    icon: Target,
-    number: "",
-    title: "Foco no que é Difícil",
-    subtitle: "",
-    colorVar: "--lizard-green",
-    stat: "",
-    statLabel: "",
-    points: [
-      {
-        label: "Algoritmo inteligente",
-        text: "O algoritmo prioriza os cards que o aluno tem dificuldade, evitando que perca tempo revisando o que já sabe.",
-      },
-    ],
-    gridClass: "md:col-span-1 md:row-span-1",
-  },
-  {
-    icon: MessageSquareText,
-    number: "03",
-    title: "Frases vs. Palavras Soltas",
-    subtitle: "O que você aprende, você usa",
-    colorVar: "--lizard-orange",
-    stat: "",
-    statLabel: "",
-    points: [
-      {
-        label: "Gramática implícita",
-        text: "Frases completas permitem que o cérebro absorva a gramática de forma intuitiva e automática.",
-      },
-    ],
-    gridClass: "md:col-span-1 md:row-span-1",
-  },
-  {
-    icon: BookOpen,
-    number: "",
-    title: "Contexto real",
-    subtitle: "O cérebro aprende melhor por contexto",
-    colorVar: "--lizard-orange",
-    stat: "",
-    statLabel: "",
-    points: [
-      {
-        label: "Sem listas infinitas",
-        text: "No Lizard, você domina frases prontas para o uso, acelerando sua fala e eliminando o medo de travar.",
-      },
-    ],
-    gridClass: "md:col-span-1 md:row-span-1",
-  },
-];
+import { Brain, Clock, MessageSquareText, Target, BookOpen, Zap } from "lucide-react";
 
 const SRSScience = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -103,21 +16,25 @@ const SRSScience = () => {
     return () => observer.disconnect();
   }, []);
 
+  const animStyle = (delay: number) => ({
+    opacity: isVisible ? 1 : 0,
+    transform: isVisible ? "translateY(0)" : "translateY(30px)",
+    transitionDelay: `${delay}ms`,
+  });
+
   return (
     <section ref={sectionRef} className="py-20 md:py-32 relative overflow-hidden">
+      {/* Background decoration */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/4 -left-32 w-64 h-64 rounded-full opacity-[0.04]" style={{ background: 'hsl(var(--lizard-purple))' }} />
-        <div className="absolute bottom-1/4 -right-32 w-64 h-64 rounded-full opacity-[0.04]" style={{ background: 'hsl(var(--lizard-green))' }} />
+        <div className="absolute top-1/4 -left-32 w-96 h-96 rounded-full opacity-[0.03] blur-3xl" style={{ background: 'hsl(var(--lizard-purple))' }} />
+        <div className="absolute bottom-1/4 -right-32 w-96 h-96 rounded-full opacity-[0.03] blur-3xl" style={{ background: 'hsl(var(--lizard-green))' }} />
       </div>
 
       <div className="container mx-auto px-4 relative">
         {/* Header */}
         <div
-          className="max-w-3xl mx-auto text-center mb-16 transition-all duration-700"
-          style={{
-            opacity: isVisible ? 1 : 0,
-            transform: isVisible ? "translateY(0)" : "translateY(30px)",
-          }}
+          className="max-w-3xl mx-auto text-center mb-14 transition-all duration-700"
+          style={animStyle(0)}
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter mb-5">
             A ciência por trás do{" "}
@@ -129,104 +46,176 @@ const SRSScience = () => {
         </div>
 
         {/* Bento Grid */}
-        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 auto-rows-auto">
-          {bentoItems.map((item, index) => {
-            const Icon = item.icon;
-            const color = `hsl(var(${item.colorVar}))`;
-            const colorLight = `hsl(var(${item.colorVar}) / 0.06)`;
-            const colorBorder = `hsl(var(${item.colorVar}) / 0.12)`;
-            const isLarge = item.gridClass.includes("row-span-2");
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-4">
 
-            return (
-              <div
-                key={index}
-                className={`group relative rounded-2xl border bg-background overflow-hidden transition-all duration-700 hover:shadow-lg ${item.gridClass}`}
-                style={{
-                  opacity: isVisible ? 1 : 0,
-                  transform: isVisible ? "translateY(0)" : "translateY(30px)",
-                  transitionDelay: `${index * 100}ms`,
-                  borderColor: colorBorder,
-                  backgroundColor: colorLight,
-                }}
-              >
-                {/* Accent corner glow */}
-                <div
-                  className="absolute -top-12 -right-12 w-32 h-32 rounded-full opacity-[0.07] blur-2xl transition-opacity duration-500 group-hover:opacity-[0.12]"
-                  style={{ background: color }}
-                />
-
-                <div className={`relative p-6 ${isLarge ? "md:p-8" : ""} h-full flex flex-col`}>
-                  {/* Icon + Number row */}
-                  <div className="flex items-center justify-between mb-4">
-                    <div
-                      className="w-10 h-10 rounded-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110"
-                      style={{ backgroundColor: `hsl(var(${item.colorVar}) / 0.12)`, color }}
-                    >
-                      <Icon className="w-5 h-5" strokeWidth={1.8} />
-                    </div>
-                    {item.number && (
-                      <span
-                        className="text-2xl font-black opacity-10 select-none"
-                        style={{ color }}
-                      >
-                        {item.number}
-                      </span>
-                    )}
-                  </div>
-
-                  {/* Stat highlight for large cards */}
-                  {item.stat && isLarge && (
-                    <div className="mb-5">
-                      <span
-                        className="text-5xl md:text-6xl font-black tracking-tighter"
-                        style={{ color }}
-                      >
-                        {item.stat}
-                      </span>
-                      <span className="text-muted-foreground text-lg ml-2">{item.statLabel}</span>
-                    </div>
-                  )}
-
-                  {item.stat && !isLarge && (
-                    <div className="mb-3">
-                      <span
-                        className="text-3xl font-black tracking-tighter"
-                        style={{ color }}
-                      >
-                        {item.stat}
-                      </span>
-                      <span className="text-muted-foreground text-sm ml-2">{item.statLabel}</span>
-                    </div>
-                  )}
-
-                  {/* Title */}
-                  <h3 className={`font-bold leading-tight mb-1.5 ${isLarge ? "text-xl md:text-2xl" : "text-lg"}`}>
-                    {item.title}
-                  </h3>
-                  {item.subtitle && (
-                    <p className="text-muted-foreground text-sm mb-4">{item.subtitle}</p>
-                  )}
-
-                  {/* Points */}
-                  <div className={`mt-auto space-y-3 ${isLarge ? "pt-2" : "pt-1"}`}>
-                    {item.points.map((point, pIndex) => (
-                      <div key={pIndex}>
-                        <div className="flex items-center gap-2 mb-1">
-                          <div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: color }} />
-                          <h4 className="font-semibold text-xs uppercase tracking-wide" style={{ color }}>
-                            {point.label}
-                          </h4>
-                        </div>
-                        <p className="text-muted-foreground text-sm leading-relaxed pl-3.5">
-                          {point.text}
-                        </p>
-                      </div>
-                    ))}
-                  </div>
+          {/* Card 1 — Hero stat (wide) */}
+          <div
+            className="group md:col-span-7 relative rounded-2xl border overflow-hidden transition-all duration-700 hover:shadow-lg"
+            style={{
+              ...animStyle(100),
+              borderColor: 'hsl(var(--lizard-purple) / 0.15)',
+              backgroundColor: 'hsl(var(--lizard-purple) / 0.04)',
+            }}
+          >
+            <div className="absolute -top-16 -right-16 w-40 h-40 rounded-full opacity-[0.06] blur-2xl transition-opacity group-hover:opacity-[0.1]" style={{ background: 'hsl(var(--lizard-purple))' }} />
+            <div className="relative p-7 md:p-8">
+              <div className="flex items-center justify-between mb-5">
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center" style={{ backgroundColor: 'hsl(var(--lizard-purple) / 0.1)', color: 'hsl(var(--lizard-purple))' }}>
+                  <Brain className="w-5 h-5" strokeWidth={1.8} />
                 </div>
+                <span className="text-2xl font-black opacity-10 select-none" style={{ color: 'hsl(var(--lizard-purple))' }}>01</span>
               </div>
-            );
-          })}
+              <div className="flex items-baseline gap-3 mb-4">
+                <span className="text-5xl md:text-6xl font-black tracking-tighter" style={{ color: 'hsl(var(--lizard-purple))' }}>95%</span>
+                <span className="text-muted-foreground text-base">de retenção</span>
+              </div>
+              <h3 className="text-xl font-bold mb-1.5">O combate à "Curva do Esquecimento"</h3>
+              <p className="text-muted-foreground text-sm mb-5">O SRS impede que o cérebro descarte a informação</p>
+              <div className="rounded-xl p-4" style={{ backgroundColor: 'hsl(var(--lizard-purple) / 0.06)', border: '1px solid hsl(var(--lizard-purple) / 0.1)' }}>
+                <div className="flex items-center gap-2 mb-1.5">
+                  <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: 'hsl(var(--lizard-purple))' }} />
+                  <h4 className="font-semibold text-xs uppercase tracking-wide" style={{ color: 'hsl(var(--lizard-purple))' }}>Retenção de +90%</h4>
+                </div>
+                <p className="text-muted-foreground text-sm leading-relaxed pl-3.5">
+                  Revisões diárias programadas via SRS elevam as taxas de retenção para até 95%. Sem reforço, esquecemos 70% em 24h.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 2 — Memória de Longo Prazo (tall right) */}
+          <div
+            className="group md:col-span-5 relative rounded-2xl border overflow-hidden transition-all duration-700 hover:shadow-lg"
+            style={{
+              ...animStyle(200),
+              borderColor: 'hsl(var(--lizard-purple) / 0.15)',
+              backgroundColor: 'hsl(var(--lizard-purple) / 0.04)',
+            }}
+          >
+            <div className="relative p-7 md:p-8 h-full flex flex-col">
+              <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-5" style={{ backgroundColor: 'hsl(var(--lizard-purple) / 0.1)', color: 'hsl(var(--lizard-purple))' }}>
+                <Zap className="w-5 h-5" strokeWidth={1.8} />
+              </div>
+              <h3 className="text-lg font-bold mb-2">Memória de Longo Prazo</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed flex-1">
+                O SRS transfere o conhecimento da memória de curto prazo para a de longo prazo de forma sistemática, "ensinando" ao cérebro que aquela informação é importante.
+              </p>
+              <div className="mt-5 flex gap-2">
+                {["Curto prazo", "Longo prazo"].map((tag, i) => (
+                  <span key={i} className="text-xs font-medium px-3 py-1.5 rounded-full" style={{
+                    backgroundColor: 'hsl(var(--lizard-purple) / 0.08)',
+                    color: 'hsl(var(--lizard-purple))',
+                  }}>
+                    {i === 1 ? "→ " : ""}{tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Card 3 — Efficiency stat */}
+          <div
+            className="group md:col-span-4 relative rounded-2xl border overflow-hidden transition-all duration-700 hover:shadow-lg"
+            style={{
+              ...animStyle(300),
+              borderColor: 'hsl(var(--lizard-green) / 0.15)',
+              backgroundColor: 'hsl(var(--lizard-green) / 0.04)',
+            }}
+          >
+            <div className="absolute -bottom-10 -left-10 w-32 h-32 rounded-full opacity-[0.06] blur-2xl" style={{ background: 'hsl(var(--lizard-green))' }} />
+            <div className="relative p-7 md:p-8">
+              <div className="flex items-center justify-between mb-4">
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center" style={{ backgroundColor: 'hsl(var(--lizard-green) / 0.1)', color: 'hsl(var(--lizard-green))' }}>
+                  <Clock className="w-5 h-5" strokeWidth={1.8} />
+                </div>
+                <span className="text-2xl font-black opacity-10 select-none" style={{ color: 'hsl(var(--lizard-green))' }}>02</span>
+              </div>
+              <div className="flex items-baseline gap-2 mb-3">
+                <span className="text-4xl font-black tracking-tighter" style={{ color: 'hsl(var(--lizard-green))' }}>1h</span>
+                <span className="text-muted-foreground text-sm">= 4 meses</span>
+              </div>
+              <h3 className="text-lg font-bold mb-1">Eficiência de tempo</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                Uma hora de estudo com repetição espaçada gera os mesmos resultados que quatro meses de estudo tradicional.
+              </p>
+            </div>
+          </div>
+
+          {/* Card 4 — Focus */}
+          <div
+            className="group md:col-span-4 relative rounded-2xl border overflow-hidden transition-all duration-700 hover:shadow-lg"
+            style={{
+              ...animStyle(400),
+              borderColor: 'hsl(var(--lizard-green) / 0.15)',
+              backgroundColor: 'hsl(var(--lizard-green) / 0.04)',
+            }}
+          >
+            <div className="relative p-7 md:p-8">
+              <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-4" style={{ backgroundColor: 'hsl(var(--lizard-green) / 0.1)', color: 'hsl(var(--lizard-green))' }}>
+                <Target className="w-5 h-5" strokeWidth={1.8} />
+              </div>
+              <h3 className="text-lg font-bold mb-1">Foco no que é Difícil</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                O algoritmo prioriza os cards que o aluno tem dificuldade, evitando que perca tempo revisando o que já sabe.
+              </p>
+            </div>
+          </div>
+
+          {/* Card 5 — Frases (wide) */}
+          <div
+            className="group md:col-span-4 relative rounded-2xl border overflow-hidden transition-all duration-700 hover:shadow-lg"
+            style={{
+              ...animStyle(500),
+              borderColor: 'hsl(var(--lizard-orange) / 0.15)',
+              backgroundColor: 'hsl(var(--lizard-orange) / 0.04)',
+            }}
+          >
+            <div className="absolute -top-10 -right-10 w-32 h-32 rounded-full opacity-[0.06] blur-2xl" style={{ background: 'hsl(var(--lizard-orange))' }} />
+            <div className="relative p-7 md:p-8">
+              <div className="flex items-center justify-between mb-4">
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center" style={{ backgroundColor: 'hsl(var(--lizard-orange) / 0.1)', color: 'hsl(var(--lizard-orange))' }}>
+                  <MessageSquareText className="w-5 h-5" strokeWidth={1.8} />
+                </div>
+                <span className="text-2xl font-black opacity-10 select-none" style={{ color: 'hsl(var(--lizard-orange))' }}>03</span>
+              </div>
+              <h3 className="text-lg font-bold mb-1">Frases vs. Palavras Soltas</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                Frases completas permitem que o cérebro absorva a gramática de forma intuitiva e automática.
+              </p>
+            </div>
+          </div>
+
+          {/* Card 6 — Contexto real (full width bottom) */}
+          <div
+            className="group md:col-span-12 relative rounded-2xl border overflow-hidden transition-all duration-700 hover:shadow-lg"
+            style={{
+              ...animStyle(600),
+              borderColor: 'hsl(var(--lizard-orange) / 0.15)',
+              backgroundColor: 'hsl(var(--lizard-orange) / 0.04)',
+            }}
+          >
+            <div className="relative p-7 md:p-8 md:flex items-center gap-8">
+              <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 mb-4 md:mb-0" style={{ backgroundColor: 'hsl(var(--lizard-orange) / 0.1)', color: 'hsl(var(--lizard-orange))' }}>
+                <BookOpen className="w-5 h-5" strokeWidth={1.8} />
+              </div>
+              <div className="flex-1">
+                <h3 className="text-lg font-bold mb-1">Contexto real</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Esqueça as listas infinitas de vocabulário. No Lizard, você domina frases prontas para o uso, acelerando sua fala e eliminando o medo de travar.
+                </p>
+              </div>
+              <div className="flex gap-2 mt-4 md:mt-0 flex-shrink-0">
+                {["Frases reais", "Sem decorar regras", "Uso prático"].map((tag, i) => (
+                  <span key={i} className="text-xs font-medium px-3 py-1.5 rounded-full whitespace-nowrap" style={{
+                    backgroundColor: 'hsl(var(--lizard-orange) / 0.08)',
+                    color: 'hsl(var(--lizard-orange))',
+                  }}>
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
