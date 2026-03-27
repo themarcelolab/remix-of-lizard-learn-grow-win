@@ -1,57 +1,90 @@
 import { useEffect, useRef, useState } from "react";
-import { Brain, Clock, MessageSquareText } from "lucide-react";
+import { Brain, Clock, MessageSquareText, Zap, Target, BookOpen } from "lucide-react";
 
-const topics = [
+const bentoItems = [
   {
     icon: Brain,
     number: "01",
     title: 'O combate à "Curva do Esquecimento"',
     subtitle: "O SRS impede que o cérebro descarte a informação",
     colorVar: "--lizard-purple",
+    stat: "95%",
+    statLabel: "de retenção",
     points: [
       {
         label: "Retenção de +90%",
-        text: "Estudos mostram que revisões diárias programadas via SRS podem elevar as taxas de retenção para até 95%, enquanto no aprendizado sem reforço, as pessoas esquecem cerca de 50% do que aprendem em apenas uma hora e 70% em 24 horas.",
+        text: "Revisões diárias programadas via SRS elevam as taxas de retenção para até 95%. Sem reforço, esquecemos 70% em 24h.",
       },
       {
         label: "Memória de Longo Prazo",
-        text: 'O SRS atua transferindo o conhecimento da memória de curto prazo para a de longo prazo de forma sistemática, "ensinando" ao cérebro que aquela informação é importante.',
+        text: 'O SRS transfere o conhecimento da memória de curto prazo para a de longo prazo, "ensinando" ao cérebro que aquela informação é importante.',
       },
     ],
+    gridClass: "md:col-span-2 md:row-span-2",
   },
   {
     icon: Clock,
     number: "02",
-    title: "Eficiência de tempo e esforço",
-    subtitle: "O tempo é o recurso mais escasso. O SRS otimiza cada minuto",
+    title: "Eficiência de tempo",
+    subtitle: "O SRS otimiza cada minuto do seu estudo",
     colorVar: "--lizard-green",
+    stat: "1h",
+    statLabel: "= 4 meses",
     points: [
       {
         label: "Regra de 1 para 120",
-        text: "Em termos de eficiência, uma hora de estudo com repetição espaçada pode gerar os mesmos resultados de retenção que quatro meses de estudo tradicional repetitivo.",
-      },
-      {
-        label: "Foco no que é Difícil",
-        text: "O algoritmo prioriza os cards que o aluno tem dificuldade, evitando que ele perca tempo revisando o que já sabe (o que aumenta o engajamento e evita o tédio).",
+        text: "Uma hora de estudo com repetição espaçada gera os mesmos resultados de retenção que quatro meses de estudo tradicional.",
       },
     ],
+    gridClass: "md:col-span-1 md:row-span-1",
+  },
+  {
+    icon: Target,
+    number: "",
+    title: "Foco no que é Difícil",
+    subtitle: "",
+    colorVar: "--lizard-green",
+    stat: "",
+    statLabel: "",
+    points: [
+      {
+        label: "Algoritmo inteligente",
+        text: "O algoritmo prioriza os cards que o aluno tem dificuldade, evitando que perca tempo revisando o que já sabe.",
+      },
+    ],
+    gridClass: "md:col-span-1 md:row-span-1",
   },
   {
     icon: MessageSquareText,
     number: "03",
-    title: "O poder das Frases vs. Palavras Soltas",
-    subtitle: "O Lizard foca em frases úteis. O que você aprende, você usa.",
+    title: "Frases vs. Palavras Soltas",
+    subtitle: "O que você aprende, você usa",
     colorVar: "--lizard-orange",
+    stat: "",
+    statLabel: "",
     points: [
       {
         label: "Gramática implícita",
-        text: "Aprender através de frases completas permite que o cérebro absorva a gramática de forma intuitiva e automática, sem a necessidade de decorar regras abstratas.",
-      },
-      {
-        label: "Contexto real",
-        text: "Esqueça as listas infinitas de vocabulário. O cérebro aprende melhor por contexto. No Lizard, você domina frases prontas para o uso, acelerando sua fala e eliminando o medo de travar.",
+        text: "Frases completas permitem que o cérebro absorva a gramática de forma intuitiva e automática.",
       },
     ],
+    gridClass: "md:col-span-1 md:row-span-1",
+  },
+  {
+    icon: BookOpen,
+    number: "",
+    title: "Contexto real",
+    subtitle: "O cérebro aprende melhor por contexto",
+    colorVar: "--lizard-orange",
+    stat: "",
+    statLabel: "",
+    points: [
+      {
+        label: "Sem listas infinitas",
+        text: "No Lizard, você domina frases prontas para o uso, acelerando sua fala e eliminando o medo de travar.",
+      },
+    ],
+    gridClass: "md:col-span-1 md:row-span-1",
   },
 ];
 
@@ -72,7 +105,6 @@ const SRSScience = () => {
 
   return (
     <section ref={sectionRef} className="py-20 md:py-32 relative overflow-hidden">
-      {/* Subtle background decoration */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 -left-32 w-64 h-64 rounded-full opacity-[0.04]" style={{ background: 'hsl(var(--lizard-purple))' }} />
         <div className="absolute bottom-1/4 -right-32 w-64 h-64 rounded-full opacity-[0.04]" style={{ background: 'hsl(var(--lizard-green))' }} />
@@ -81,7 +113,7 @@ const SRSScience = () => {
       <div className="container mx-auto px-4 relative">
         {/* Header */}
         <div
-          className="max-w-3xl mx-auto text-center mb-20 transition-all duration-700"
+          className="max-w-3xl mx-auto text-center mb-16 transition-all duration-700"
           style={{
             opacity: isVisible ? 1 : 0,
             transform: isVisible ? "translateY(0)" : "translateY(30px)",
@@ -96,70 +128,96 @@ const SRSScience = () => {
           </p>
         </div>
 
-        {/* Topics */}
-        <div className="max-w-5xl mx-auto space-y-6">
-          {topics.map((topic, index) => {
-            const Icon = topic.icon;
-            const color = `hsl(var(${topic.colorVar}))`;
-            const colorLight = `hsl(var(${topic.colorVar}) / 0.08)`;
-            const colorBorder = `hsl(var(${topic.colorVar}) / 0.15)`;
+        {/* Bento Grid */}
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 auto-rows-auto">
+          {bentoItems.map((item, index) => {
+            const Icon = item.icon;
+            const color = `hsl(var(${item.colorVar}))`;
+            const colorLight = `hsl(var(${item.colorVar}) / 0.06)`;
+            const colorBorder = `hsl(var(${item.colorVar}) / 0.12)`;
+            const isLarge = item.gridClass.includes("row-span-2");
 
             return (
               <div
                 key={index}
-                className="group relative rounded-2xl border bg-background transition-all duration-700 hover:shadow-xl overflow-hidden"
+                className={`group relative rounded-2xl border bg-background overflow-hidden transition-all duration-700 hover:shadow-lg ${item.gridClass}`}
                 style={{
                   opacity: isVisible ? 1 : 0,
-                  transform: isVisible ? "translateY(0)" : "translateY(40px)",
-                  transitionDelay: `${index * 150}ms`,
+                  transform: isVisible ? "translateY(0)" : "translateY(30px)",
+                  transitionDelay: `${index * 100}ms`,
                   borderColor: colorBorder,
+                  backgroundColor: colorLight,
                 }}
               >
-                {/* Colored top accent bar */}
-                <div className="h-1 w-full" style={{ background: `linear-gradient(90deg, ${color}, transparent)` }} />
+                {/* Accent corner glow */}
+                <div
+                  className="absolute -top-12 -right-12 w-32 h-32 rounded-full opacity-[0.07] blur-2xl transition-opacity duration-500 group-hover:opacity-[0.12]"
+                  style={{ background: color }}
+                />
 
-                <div className="p-8 md:p-10">
-                  {/* Header row */}
-                  <div className="flex items-start gap-5 mb-8">
+                <div className={`relative p-6 ${isLarge ? "md:p-8" : ""} h-full flex flex-col`}>
+                  {/* Icon + Number row */}
+                  <div className="flex items-center justify-between mb-4">
                     <div
-                      className="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110"
-                      style={{ backgroundColor: colorLight, color }}
+                      className="w-10 h-10 rounded-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110"
+                      style={{ backgroundColor: `hsl(var(${item.colorVar}) / 0.12)`, color }}
                     >
-                      <Icon className="w-6 h-6" strokeWidth={1.8} />
+                      <Icon className="w-5 h-5" strokeWidth={1.8} />
                     </div>
-                    <div className="flex-1 min-w-0">
-                      <h3 className="text-xl md:text-2xl font-bold leading-tight">{topic.title}</h3>
-                      <p className="text-muted-foreground mt-1.5 text-sm md:text-base">{topic.subtitle}</p>
-                    </div>
-                    <span
-                      className="hidden md:flex flex-shrink-0 text-3xl font-black opacity-10 select-none"
-                      style={{ color }}
-                    >
-                      {topic.number}
-                    </span>
+                    {item.number && (
+                      <span
+                        className="text-2xl font-black opacity-10 select-none"
+                        style={{ color }}
+                      >
+                        {item.number}
+                      </span>
+                    )}
                   </div>
 
-                  {/* Points grid */}
-                  <div className="grid md:grid-cols-2 gap-4 md:pl-[68px]">
-                    {topic.points.map((point, pIndex) => (
-                      <div
-                        key={pIndex}
-                        className="rounded-xl p-5 transition-all duration-300 hover:translate-y-[-2px]"
-                        style={{
-                          backgroundColor: colorLight,
-                          border: `1px solid ${colorBorder}`,
-                        }}
+                  {/* Stat highlight for large cards */}
+                  {item.stat && isLarge && (
+                    <div className="mb-5">
+                      <span
+                        className="text-5xl md:text-6xl font-black tracking-tighter"
+                        style={{ color }}
                       >
-                        <div className="flex items-center gap-2 mb-2.5">
-                          <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: color }} />
-                          <h4
-                            className="font-semibold text-sm uppercase tracking-wide"
-                            style={{ color }}
-                          >
+                        {item.stat}
+                      </span>
+                      <span className="text-muted-foreground text-lg ml-2">{item.statLabel}</span>
+                    </div>
+                  )}
+
+                  {item.stat && !isLarge && (
+                    <div className="mb-3">
+                      <span
+                        className="text-3xl font-black tracking-tighter"
+                        style={{ color }}
+                      >
+                        {item.stat}
+                      </span>
+                      <span className="text-muted-foreground text-sm ml-2">{item.statLabel}</span>
+                    </div>
+                  )}
+
+                  {/* Title */}
+                  <h3 className={`font-bold leading-tight mb-1.5 ${isLarge ? "text-xl md:text-2xl" : "text-lg"}`}>
+                    {item.title}
+                  </h3>
+                  {item.subtitle && (
+                    <p className="text-muted-foreground text-sm mb-4">{item.subtitle}</p>
+                  )}
+
+                  {/* Points */}
+                  <div className={`mt-auto space-y-3 ${isLarge ? "pt-2" : "pt-1"}`}>
+                    {item.points.map((point, pIndex) => (
+                      <div key={pIndex}>
+                        <div className="flex items-center gap-2 mb-1">
+                          <div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: color }} />
+                          <h4 className="font-semibold text-xs uppercase tracking-wide" style={{ color }}>
                             {point.label}
                           </h4>
                         </div>
-                        <p className="text-muted-foreground text-sm leading-relaxed">
+                        <p className="text-muted-foreground text-sm leading-relaxed pl-3.5">
                           {point.text}
                         </p>
                       </div>
