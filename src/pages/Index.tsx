@@ -21,7 +21,7 @@ const Index = () => {
         <section id="beneficios">
           <Benefits />
         </section>
-        <BrandImage />
+        
         <section id="metodologia">
           <SRSScience />
         </section>
