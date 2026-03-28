@@ -93,7 +93,7 @@ const SRSScience = () => {
                     backgroundColor: 'hsl(var(--lizard-purple) / 0.08)',
                     color: 'hsl(var(--lizard-purple))',
                   }}>
-                    {i === 1 ? "→ " : ""}{tag}
+                    {tag}
                   </span>
                 ))}
               </div>
