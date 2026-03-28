@@ -87,9 +87,6 @@ const SRSScience = () => {
             }}
           >
             <div className="relative p-7 md:p-8 h-full flex flex-col">
-              <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-5" style={{ backgroundColor: 'hsl(var(--lizard-purple) / 0.1)', color: 'hsl(var(--lizard-purple))' }}>
-                <Zap className="w-5 h-5" strokeWidth={1.8} />
-              </div>
               <h3 className="text-lg font-bold mb-2">Memória de Longo Prazo</h3>
               <p className="text-muted-foreground text-sm leading-relaxed flex-1">
                 O SRS transfere o conhecimento da memória de curto prazo para a de longo prazo de forma sistemática, "ensinando" ao cérebro que aquela informação é importante.
