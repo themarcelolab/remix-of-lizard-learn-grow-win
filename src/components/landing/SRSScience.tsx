@@ -146,9 +146,6 @@ const SRSScience = () => {
           >
             <div className="absolute -top-10 -right-10 w-32 h-32 rounded-full opacity-[0.06] blur-2xl" style={{ background: 'hsl(var(--lizard-orange))' }} />
             <div className="relative p-7 md:p-8">
-              <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-4" style={{ backgroundColor: 'hsl(var(--lizard-orange) / 0.1)', color: 'hsl(var(--lizard-orange))' }}>
-                <MessageSquareText className="w-5 h-5" strokeWidth={1.8} />
-              </div>
               <h3 className="text-lg font-bold mb-1">Frases vs. Palavras Soltas</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
                 Frases completas permitem que o cérebro absorva a gramática de forma intuitiva e automática.
