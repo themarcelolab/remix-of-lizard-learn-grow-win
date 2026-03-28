@@ -61,6 +61,15 @@ const SRSScience = () => {
             <div className="relative p-7 md:p-8">
               <h3 className="text-xl font-bold mb-1.5">O combate à "Curva do Esquecimento"</h3>
               <p className="text-muted-foreground text-sm mb-5">O SRS impede que o cérebro descarte a informação</p>
+              <div className="rounded-xl p-4" style={{ backgroundColor: 'hsl(var(--lizard-purple) / 0.06)', border: '1px solid hsl(var(--lizard-purple) / 0.1)' }}>
+                <div className="flex items-center gap-2 mb-1.5">
+                  <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: 'hsl(var(--lizard-purple))' }} />
+                  <h4 className="font-semibold text-xs uppercase tracking-wide" style={{ color: 'hsl(var(--lizard-purple))' }}>Retenção de +90%</h4>
+                </div>
+                <p className="text-muted-foreground text-sm leading-relaxed pl-3.5">
+                  Revisões diárias programadas via SRS elevam as taxas de retenção para até 95%. Sem reforço, esquecemos 70% em 24h.
+                </p>
+              </div>
             </div>
           </div>
 
