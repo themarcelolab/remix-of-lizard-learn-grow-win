@@ -117,10 +117,6 @@ const SRSScience = () => {
                 </div>
                 <span className="text-2xl font-black opacity-10 select-none" style={{ color: 'hsl(var(--lizard-green))' }}>02</span>
               </div>
-              <div className="flex items-baseline gap-2 mb-3">
-                <span className="text-4xl font-black tracking-tighter" style={{ color: 'hsl(var(--lizard-green))' }}>1h</span>
-                <span className="text-muted-foreground text-sm">= 4 meses</span>
-              </div>
               <h3 className="text-lg font-bold mb-1">Eficiência de tempo</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
                 Uma hora de estudo com repetição espaçada gera os mesmos resultados que quatro meses de estudo tradicional.
