@@ -128,9 +128,6 @@ const SRSScience = () => {
             }}
           >
             <div className="relative p-7 md:p-8">
-              <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-4" style={{ backgroundColor: 'hsl(var(--lizard-green) / 0.1)', color: 'hsl(var(--lizard-green))' }}>
-                <Target className="w-5 h-5" strokeWidth={1.8} />
-              </div>
               <h3 className="text-lg font-bold mb-1">Foco no que é Difícil</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
                 O algoritmo prioriza os cards que o aluno tem dificuldade, evitando que perca tempo revisando o que já sabe.
