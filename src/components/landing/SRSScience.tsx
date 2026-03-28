@@ -59,9 +59,6 @@ const SRSScience = () => {
           >
             <div className="absolute -top-16 -right-16 w-40 h-40 rounded-full opacity-[0.06] blur-2xl transition-opacity group-hover:opacity-[0.1]" style={{ background: 'hsl(var(--lizard-purple))' }} />
             <div className="relative p-7 md:p-8">
-              <div className="flex items-center justify-end mb-5">
-                <span className="text-2xl font-black opacity-10 select-none" style={{ color: 'hsl(var(--lizard-purple))' }}>01</span>
-              </div>
               <div className="flex items-baseline gap-3 mb-4">
                 <span className="text-5xl md:text-6xl font-black tracking-tighter" style={{ color: 'hsl(var(--lizard-purple))' }}>95%</span>
                 <span className="text-muted-foreground text-base">de retenção</span>
