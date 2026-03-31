@@ -3,7 +3,7 @@ import travelPrize from "@/assets/travel-prize.png";
 
 const Prizes = () => {
   return (
-    <section className="py-16 md:py-24 relative overflow-hidden">
+    <section className="py-20 md:py-32 relative overflow-hidden">
       {/* Light gradient background - purple/pink/orange tones */}
       <div className="absolute inset-0 bg-gradient-to-br from-lizard-purple/8 via-lizard-pink/5 to-lizard-orange/8" />
       
