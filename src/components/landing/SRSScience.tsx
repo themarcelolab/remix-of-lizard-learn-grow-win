@@ -163,9 +163,6 @@ const SRSScience = () => {
             }}
           >
             <div className="relative p-7 md:p-8 md:flex items-center gap-8">
-              <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 mb-4 md:mb-0" style={{ backgroundColor: 'hsl(var(--lizard-orange) / 0.1)', color: 'hsl(var(--lizard-orange))' }}>
-                <BookOpen className="w-5 h-5" strokeWidth={1.8} />
-              </div>
               <div className="flex-1">
                 <h3 className="text-lg font-bold mb-1">Contexto real</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">
