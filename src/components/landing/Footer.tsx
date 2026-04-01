@@ -21,10 +21,12 @@ const Footer = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                <Button variant="hero" size="lg" className="gap-3">
-                  <Apple className="w-5 h-5" />
-                  App Store
-                </Button>
+                <a href="https://lizard-app.online/" target="_blank" rel="noopener noreferrer">
+                  <Button variant="hero" size="lg" className="gap-3">
+                    <Apple className="w-5 h-5" />
+                    App Store
+                  </Button>
+                </a>
                 <Button variant="heroOutline" size="lg" className="gap-3">
                   <Smartphone className="w-5 h-5" />
                   Google Play
