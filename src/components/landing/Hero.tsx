@@ -24,7 +24,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-2">
             <a href="https://wa.me/5551997930490" target="_blank" rel="noopener noreferrer">
               <Button variant="hero" size="lg">
-                Começar agora
+                Teste grátis por 7 dias
               </Button>
             </a>
           </div>
