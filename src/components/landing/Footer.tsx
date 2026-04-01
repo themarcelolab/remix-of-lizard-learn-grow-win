@@ -27,10 +27,12 @@ const Footer = () => {
                     App Store
                   </Button>
                 </a>
-                <Button variant="heroOutline" size="lg" className="gap-3">
-                  <Smartphone className="w-5 h-5" />
-                  Google Play
-                </Button>
+                <a href="https://lizard-app.online/" target="_blank" rel="noopener noreferrer">
+                  <Button variant="heroOutline" size="lg" className="gap-3">
+                    <Smartphone className="w-5 h-5" />
+                    Google Play
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
