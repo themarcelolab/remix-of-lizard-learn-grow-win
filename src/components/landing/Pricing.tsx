@@ -58,9 +58,11 @@ const Pricing = () => {
               </ul>
 
               {/* CTA Button */}
-              <Button variant="gradient" size="xl" className="w-full">
-                Quero começar agora
-              </Button>
+              <a href="https://lizard-app.online/" target="_blank" rel="noopener noreferrer" className="w-full">
+                <Button variant="gradient" size="xl" className="w-full">
+                  Quero começar agora
+                </Button>
+              </a>
 
               <p className="text-center text-sm text-muted-foreground mt-4">
                 Cancele quando quiser. Sem compromisso.
