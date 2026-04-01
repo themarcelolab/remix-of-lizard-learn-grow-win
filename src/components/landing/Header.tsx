@@ -45,7 +45,7 @@ const Header = () => {
           </nav>
 
           <div className="hidden md:block">
-            <a href="https://wa.me/5551997930490" target="_blank" rel="noopener noreferrer">
+            <a href="https://lizard-app.online/" target="_blank" rel="noopener noreferrer">
               <Button variant="default">
                 Começar agora
               </Button>
