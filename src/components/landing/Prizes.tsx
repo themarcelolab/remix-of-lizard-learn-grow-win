@@ -10,7 +10,7 @@ const Prizes = () => {
       <div className="container mx-auto px-4 relative">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left content */}
-          <div className="space-y-8">
+          <div className="space-y-8 pr-8 lg:pr-12">
 
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tighter">
               Crescemos juntos,{" "}
