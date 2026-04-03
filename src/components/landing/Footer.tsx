@@ -77,13 +77,6 @@ const Footer = () => {
               >
                 <MessageCircle className="w-5 h-5 text-lizard-green" />
               </a>
-              <a 
-                href="/contato" 
-                className="w-10 h-10 rounded-full bg-lizard-orange/10 flex items-center justify-center hover:bg-lizard-orange/20 transition-colors"
-                aria-label="Email"
-              >
-                <Mail className="w-5 h-5 text-lizard-orange" />
-              </a>
             </div>
 
             {/* Links */}
