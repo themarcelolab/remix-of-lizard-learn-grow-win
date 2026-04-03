@@ -60,7 +60,7 @@ const Footer = () => {
                 <Instagram className="w-5 h-5 text-lizard-purple" />
               </a>
               <a 
-                href="https://www.linkedin.com/company/111154977/" 
+                href="https://www.linkedin.com/company/lizard-app/" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-lizard-blue/10 flex items-center justify-center hover:bg-lizard-blue/20 transition-colors"
