@@ -38,7 +38,7 @@ const SRSScience = () => {
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter mb-5">
             A ciência por trás do{" "}
-            <span className="gradient-brand-text">SRS</span>
+            <span className="text-lizard-green">SRS</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-xl mx-auto">
             Entenda por que a repetição espaçada é o método mais eficaz para fixar conhecimento
