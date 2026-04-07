@@ -16,7 +16,7 @@ const Pricing = () => {
         <div className="max-w-xl mx-auto">
           <div className="relative bg-card rounded-3xl shadow-2xl overflow-hidden">
             {/* Gradient header */}
-            <div className="gradient-brand p-8 text-center">
+            <div className="bg-lizard-green p-8 text-center">
               
               <h2 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-2">
                 Construa vocabulário em inglês de forma definitiva.
