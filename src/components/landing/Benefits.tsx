@@ -52,7 +52,7 @@ const Benefits = () => {
           <div>
             <div className="mb-8">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter">
-                Por que escolher o <span className="gradient-brand-text">Lizard</span>
+                Por que escolher o <span className="text-lizard-green">Lizard</span>
               </h2>
             </div>
 
