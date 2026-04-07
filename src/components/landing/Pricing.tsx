@@ -27,7 +27,7 @@ const Pricing = () => {
               {/* Price */}
               <div className="text-center mb-8">
                 <div className="flex items-baseline justify-center gap-2">
-                  <span className="text-5xl md:text-6xl font-bold gradient-brand-text">R$29,90</span>
+                  <span className="text-5xl md:text-6xl font-bold text-lizard-green">R$29,90</span>
                   <span className="text-muted-foreground">/ mês</span>
                 </div>
                 <p className="text-muted-foreground mt-2">
