@@ -1,4 +1,7 @@
 import { useEffect, useRef, useState } from "react";
+import timelineBeginner from "@/assets/timeline-beginner.png";
+import timelineIntermediate from "@/assets/timeline-intermediate.png";
+import timelineAdvanced from "@/assets/timeline-advanced.png";
 
 const timelineSteps = [
   {
@@ -9,7 +12,7 @@ const timelineSteps = [
     bgLight: "bg-lizard-orange/20",
     textColor: "text-lizard-orange",
     borderColor: "border-lizard-orange",
-    emoji: "🌱",
+    image: timelineBeginner,
   },
   {
     month: "3 meses",
