@@ -171,9 +171,6 @@ const Parcerias = () => {
                       Quero ser escola parceira
                       <ArrowRight className="ml-2" />
                     </Button>
-                    <Button variant="outline" size="lg" className="border-lizard-orange text-lizard-orange hover:bg-lizard-orange/10">
-                      Agendar conversa
-                    </Button>
                   </div>
 
                   {/* Stats */}
@@ -612,9 +609,6 @@ const Parcerias = () => {
                 <Button size="lg" className="bg-lizard-purple hover:bg-lizard-purple/90 text-white shadow-lg">
                   Quero ser escola parceira
                   <ArrowRight className="ml-2" />
-                </Button>
-                <Button variant="outline" size="lg" className="border-lizard-orange text-lizard-orange hover:bg-lizard-orange/10">
-                  Agendar conversa
                 </Button>
               </div>
             </div>
