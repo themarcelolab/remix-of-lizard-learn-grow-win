@@ -509,9 +509,6 @@ const Parcerias = () => {
                   O método de repetição espaçada utilizado no Lizard é respaldado por estudos de ciência cognitiva 
                   e já utilizado por milhões de estudantes no mundo.
                 </p>
-                <Button variant="link" className="mt-4 text-lizard-orange">
-                  Ver referências científicas
-                </Button>
               </div>
             </div>
           </div>
