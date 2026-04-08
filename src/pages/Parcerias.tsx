@@ -361,7 +361,7 @@ const Parcerias = () => {
               <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div>
                   <span className="inline-block px-4 py-2 rounded-full bg-lizard-blue/10 text-lizard-blue text-sm font-medium mb-4">
-                    Personalização
+                    Tecnologia
                   </span>
                   <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tighter mb-6">
                     Inovação que gera <span className="text-lizard-orange">valor</span> para a sua escola
