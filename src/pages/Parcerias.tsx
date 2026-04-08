@@ -65,7 +65,7 @@ const steps = [{
   text: "A escola se torna parceira"
 }, {
   num: 2,
-  text: "Personalizamos o app com a identidade da instituição"
+  text: "Configuração do painel administrativo da escola"
 }, {
   num: 3,
   text: "Os alunos recebem acesso e começam a estudar"
