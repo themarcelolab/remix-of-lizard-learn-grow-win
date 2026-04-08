@@ -68,7 +68,7 @@ const steps = [{
   text: "Configuração do painel administrativo da escola"
 }, {
   num: 3,
-  text: "Os alunos recebem acesso e começam a estudar"
+  text: "Treinamento da equipe pedagógica"
 }, {
   num: 4,
   text: "A escola acompanha engajamento e evolução"
