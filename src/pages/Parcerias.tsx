@@ -65,7 +65,7 @@ const steps = [{
   text: "A escola se torna parceira"
 }, {
   num: 2,
-  text: "Configuração do painel administrativo da escola"
+  text: "Configuração do painel administrativo da escola + treinamento pedagógico"
 }, {
   num: 3,
   text: "Treinamento da equipe pedagógica"
