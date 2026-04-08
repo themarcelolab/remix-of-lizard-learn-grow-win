@@ -109,7 +109,7 @@ const Timeline = () => {
                       transform: activeIndex >= index ? 'scale(1)' : 'scale(0.5)',
                     }}
                   >
-                    <span className={activeIndex >= index ? 'animate-bounce' : ''}>{step.emoji}</span>
+                    <img src={step.image} alt={step.month} className={`w-10 h-10 object-contain ${activeIndex >= index ? 'animate-bounce' : ''}`} />
                     {/* Pulse ring animation */}
                     {activeIndex >= index && (
                       <div className={`absolute inset-0 rounded-full ${step.color} animate-ping opacity-25`} />
