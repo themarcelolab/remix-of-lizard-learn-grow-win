@@ -22,7 +22,7 @@ const timelineSteps = [
     bgLight: "bg-lizard-purple/20",
     textColor: "text-lizard-purple",
     borderColor: "border-lizard-purple",
-    emoji: "🚀",
+    image: timelineIntermediate,
   },
   {
     month: "6 meses",
@@ -32,7 +32,7 @@ const timelineSteps = [
     bgLight: "bg-lizard-pink/20",
     textColor: "text-lizard-pink",
     borderColor: "border-lizard-pink",
-    emoji: "🏆",
+    image: timelineAdvanced,
   },
 ];
 const Timeline = () => {
