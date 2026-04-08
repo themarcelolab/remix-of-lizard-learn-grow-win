@@ -17,7 +17,7 @@ import girlBooksYellow from "@/assets/girl-books-yellow.png";
 import girlHeadphones from "@/assets/girl-headphones.png";
 import boyLaughing from "@/assets/boy-laughing.jpg";
 const challenges = [{
-  text: "Aulas tradicionais não garantem retenção de vocabulário"
+  text: "Aulas não garantem retenção de vocabulário"
 }, {
   text: "Alunos esquecem o conteúdo fora da sala de aula"
 }, {
