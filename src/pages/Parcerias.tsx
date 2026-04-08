@@ -45,7 +45,7 @@ const features = [{
 const customization = [{
   text: "Sustentabilidade financeira"
 }, {
-    text: "Comunicação adaptada ao tom institucional"
+    text: "Engajamento e retenção de alunos"
   }, {
     text: "Autoridade pedagógica e tecnológica"
   }];
