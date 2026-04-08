@@ -45,10 +45,10 @@ const features = [{
 const customization = [{
   text: "Sustentabilidade financeira"
 }, {
-  text: "Comunicação adaptada ao tom institucional"
-}, {
-  text: "Experiência exclusiva para seus alunos"
-}];
+    text: "Comunicação adaptada ao tom institucional"
+  }, {
+    text: "Autoridade pedagógica e tecnológica"
+  }];
 const strengthens = [{
   text: "marca da escola",
   color: "lizard-purple"
