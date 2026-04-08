@@ -173,21 +173,6 @@ const Parcerias = () => {
                     </Button>
                   </div>
 
-                  {/* Stats */}
-                  <div className="flex gap-8 pt-4">
-                    <div className="border-r border-border pr-8">
-                      <p className="text-2xl font-bold text-lizard-purple">5-15</p>
-                      <p className="text-sm text-muted-foreground">min/dia</p>
-                    </div>
-                    <div className="border-r border-border pr-8">
-                      <p className="text-2xl font-bold text-lizard-orange">100%</p>
-                      <p className="text-sm text-muted-foreground">digital</p>
-                    </div>
-                    <div>
-                      <p className="text-2xl font-bold text-lizard-blue">💰</p>
-                      <p className="text-sm text-muted-foreground">comissão para escola</p>
-                    </div>
-                  </div>
                 </div>
 
                 {/* Right - Modern Geometric Photo Grid */}
