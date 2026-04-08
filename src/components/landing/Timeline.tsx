@@ -1,4 +1,7 @@
 import { useEffect, useRef, useState } from "react";
+import timelineBeginner from "@/assets/timeline-beginner.png";
+import timelineIntermediate from "@/assets/timeline-intermediate.png";
+import timelineAdvanced from "@/assets/timeline-advanced.png";
 
 const timelineSteps = [
   {
@@ -9,7 +12,7 @@ const timelineSteps = [
     bgLight: "bg-lizard-orange/20",
     textColor: "text-lizard-orange",
     borderColor: "border-lizard-orange",
-    emoji: "🌱",
+    image: timelineBeginner,
   },
   {
     month: "3 meses",
@@ -19,7 +22,7 @@ const timelineSteps = [
     bgLight: "bg-lizard-purple/20",
     textColor: "text-lizard-purple",
     borderColor: "border-lizard-purple",
-    emoji: "🚀",
+    image: timelineIntermediate,
   },
   {
     month: "6 meses",
@@ -29,7 +32,7 @@ const timelineSteps = [
     bgLight: "bg-lizard-pink/20",
     textColor: "text-lizard-pink",
     borderColor: "border-lizard-pink",
-    emoji: "🏆",
+    image: timelineAdvanced,
   },
 ];
 const Timeline = () => {
@@ -106,7 +109,7 @@ const Timeline = () => {
                       transform: activeIndex >= index ? 'scale(1)' : 'scale(0.5)',
                     }}
                   >
-                    <span className={activeIndex >= index ? 'animate-bounce' : ''}>{step.emoji}</span>
+                    <img src={step.image} alt={step.month} className={`w-10 h-10 object-contain ${activeIndex >= index ? 'animate-bounce' : ''}`} />
                     {/* Pulse ring animation */}
                     {activeIndex >= index && (
                       <div className={`absolute inset-0 rounded-full ${step.color} animate-ping opacity-25`} />
