@@ -43,7 +43,7 @@ const features = [{
   color: "lizard-pink"
 }];
 const customization = [{
-  text: "Interface personalizada com a identidade visual da escola"
+  text: "Sustentabilidade financeira"
 }, {
   text: "Comunicação adaptada ao tom institucional"
 }, {
