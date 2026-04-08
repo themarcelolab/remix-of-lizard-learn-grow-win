@@ -364,7 +364,7 @@ const Parcerias = () => {
                     Personalização
                   </span>
                   <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tighter mb-6">
-                    O app com a <span className="text-lizard-orange">identidade</span> da sua escola
+                    Inovação que gera <span className="text-lizard-orange">valor</span> para a sua escola
                   </h2>
                   <p className="text-muted-foreground mb-6">Cada escola parceira pode ter:</p>
                   
