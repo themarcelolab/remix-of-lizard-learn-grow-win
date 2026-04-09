@@ -167,10 +167,12 @@ const Parcerias = () => {
                   </p>
 
                   <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                    <Button size="lg" className="bg-lizard-purple hover:bg-lizard-purple/90 text-white">
-                      Quero ser escola parceira
-                      <ArrowRight className="ml-2" />
-                    </Button>
+                    <a href="https://wa.me/5551995486512" target="_blank" rel="noopener noreferrer">
+                      <Button size="lg" className="bg-lizard-purple hover:bg-lizard-purple/90 text-white">
+                        Quero ser escola parceira
+                        <ArrowRight className="ml-2" />
+                      </Button>
+                    </a>
                   </div>
 
                 </div>
