@@ -1,5 +1,5 @@
 import { Plane, Star, Gift, Users } from "lucide-react";
-import travelPrize from "@/assets/travel-prize.png";
+import lizardPrize from "@/assets/lizard-iphone-prize.png";
 
 const Prizes = () => {
   return (
