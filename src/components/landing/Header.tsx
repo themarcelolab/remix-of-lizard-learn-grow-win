@@ -22,6 +22,7 @@ const Header = () => {
           <nav className="hidden md:flex items-center gap-8">
             <Link 
               to="/parcerias" 
+              onClick={() => window.scrollTo({ top: 0 })}
               className={`text-sm font-semibold px-4 py-2 rounded-full transition-all ${
                 isParcerias 
                   ? "bg-lizard-purple text-white" 
@@ -67,6 +68,7 @@ const Header = () => {
             <nav className="flex flex-col gap-4">
               <Link 
                 to="/parcerias" 
+                onClick={() => { setIsMenuOpen(false); window.scrollTo({ top: 0 }); }}
                 className={`text-sm font-semibold py-2 px-4 rounded-full w-fit ${
                   isParcerias 
                     ? "bg-lizard-purple text-white" 
