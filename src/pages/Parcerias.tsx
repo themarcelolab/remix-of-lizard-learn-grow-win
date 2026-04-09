@@ -496,25 +496,6 @@ const Parcerias = () => {
           </div>
         </section>
 
-        {/* Methodology Section - White with rounded box */}
-        <section className="py-16 md:py-24">
-          <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto">
-              <div className="bg-gradient-to-br from-lizard-orange/5 to-lizard-pink/5 p-8 md:p-12 rounded-3xl border-2 border-lizard-orange/20 text-center">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-lizard-orange/10 rounded-2xl mb-6">
-                  <Brain className="w-8 h-8 text-lizard-orange" />
-                </div>
-                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tighter mb-4">
-                  Metodologia baseada em <span className="text-lizard-orange">ciência</span>
-                </h2>
-                <p className="text-lg text-muted-foreground">
-                  O método de repetição espaçada utilizado no Lizard é respaldado por estudos de ciência cognitiva 
-                  e já utilizado por milhões de estudantes no mundo.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* Full-width Image Banner with Animation */}
         <section className="w-full">
