@@ -170,7 +170,7 @@ const SRSScience = () => {
                 </p>
               </div>
               <div className="flex gap-2 mt-4 md:mt-0 flex-shrink-0">
-                {["Frases reais", "Sem decorar regras", "Uso prático"].map((tag, i) => (
+                {["Frases reais", "Sem decorar regras"].map((tag, i) => (
                   <span key={i} className="text-xs font-medium px-3 py-1.5 rounded-full whitespace-nowrap" style={{
                     backgroundColor: 'hsl(var(--lizard-orange) / 0.08)',
                     color: 'hsl(var(--lizard-orange))',
