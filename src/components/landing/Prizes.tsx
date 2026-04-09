@@ -59,7 +59,7 @@ const Prizes = () => {
           <div className="relative flex items-center justify-center">
             <div className="absolute inset-0 bg-lizard-orange/10 blur-3xl rounded-full" />
             <img
-              src={travelPrize}
+              src={lizardPrize}
               alt="Prêmios de viagem"
               className="relative w-full max-w-md lg:max-w-lg aspect-[3/4] object-cover rounded-3xl shadow-2xl"
             />
