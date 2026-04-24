@@ -37,9 +37,13 @@ const Header = () => {
             <a href="/#metodologia" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Metodologia
             </a>
-            <a href="/#premios" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            <Link
+              to="/premios"
+              onClick={() => window.scrollTo({ top: 0 })}
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+            >
               Prêmios
-            </a>
+            </Link>
             <a href="/#preco" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Preço
             </a>
@@ -83,9 +87,13 @@ const Header = () => {
               <a href="/#metodologia" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-2">
                 Metodologia
               </a>
-              <a href="/#premios" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-2">
+              <Link
+                to="/premios"
+                onClick={() => { setIsMenuOpen(false); window.scrollTo({ top: 0 }); }}
+                className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-2"
+              >
                 Prêmios
-              </a>
+              </Link>
               <a href="/#preco" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-2">
                 Preço
               </a>
