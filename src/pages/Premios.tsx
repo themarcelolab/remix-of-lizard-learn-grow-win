@@ -99,9 +99,6 @@ const Premios = () => {
                   <a href="https://lizard-app.online/" target="_blank" rel="noopener noreferrer">
                     <Button variant="hero" size="lg">Começar agora</Button>
                   </a>
-                  <Button variant="outline" size="lg" onClick={handleInvite}>
-                    Convidar amigos
-                  </Button>
                 </div>
               </div>
 
