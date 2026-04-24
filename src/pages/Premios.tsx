@@ -100,7 +100,7 @@ const Premios = () => {
                     <Button variant="hero" size="lg">Começar agora</Button>
                   </a>
                   <Button variant="outline" size="lg" onClick={handleInvite}>
-                    <Share2 className="w-4 h-4" /> Convidar amigos
+                    Convidar amigos
                   </Button>
                 </div>
               </div>
