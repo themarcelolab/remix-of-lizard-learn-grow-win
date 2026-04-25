@@ -77,11 +77,6 @@ const Premios = () => {
           <div className="container mx-auto px-4 relative">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="space-y-6 animate-fade-in">
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-lizard-orange/15 border border-lizard-orange/30">
-                  <Trophy className="w-4 h-4 text-lizard-orange" />
-                  <span className="text-sm font-semibold text-lizard-orange">Experiential Rewards</span>
-                </div>
-
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tighter">
                   Crescemos juntos,{" "}
                   <span className="bg-gradient-to-r from-lizard-purple via-lizard-pink to-lizard-orange bg-clip-text text-transparent">
