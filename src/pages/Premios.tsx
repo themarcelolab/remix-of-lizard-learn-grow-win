@@ -283,7 +283,7 @@ const Premios = () => {
                   onClick={handleInvite}
                   className="border-white text-white hover:bg-white hover:text-lizard-purple"
                 >
-                  <Share2 className="w-4 h-4" /> Convidar amigos
+                  Convidar amigos
                 </Button>
               </div>
             </div>
