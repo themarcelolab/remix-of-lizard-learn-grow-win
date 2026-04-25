@@ -124,10 +124,6 @@ const Premios = () => {
                 transform: visible ? "translateY(0)" : "translateY(20px)",
               }}
             >
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-lizard-purple/15 border border-lizard-purple/30 mb-4">
-                <Target className="w-4 h-4 text-lizard-purple" />
-                <span className="text-sm font-semibold text-lizard-purple">Primeira grande meta</span>
-              </div>
               <h2 className="text-3xl md:text-5xl font-bold tracking-tighter mb-4">
                 1.000 usuários,{" "}
                 <span className="text-lizard-orange">1 iPhone sorteado</span>
