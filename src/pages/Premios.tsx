@@ -163,9 +163,7 @@ const Premios = () => {
                     transitionDelay: `${i * 150}ms`,
                   }}
                 >
-                  <div className={`w-12 h-12 rounded-2xl bg-${item.color}/15 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
-                    <item.icon className={`w-6 h-6 text-${item.color}`} />
-                  </div>
+                  <item.icon className={`w-6 h-6 text-${item.color} mb-4`} />
                   <h3 className="text-xl font-bold mb-2">{item.title}</h3>
                   <p className="text-muted-foreground">{item.desc}</p>
                 </div>
