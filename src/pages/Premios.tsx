@@ -190,11 +190,6 @@ const Premios = () => {
               </div>
 
               <div className="space-y-6 order-1 lg:order-2">
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-lizard-pink/15 border border-lizard-pink/30">
-                  <Heart className="w-4 h-4 text-lizard-pink" />
-                  <span className="text-sm font-semibold text-lizard-pink">Por que metas coletivas?</span>
-                </div>
-
                 <h2 className="text-3xl md:text-4xl font-bold tracking-tighter leading-tight">
                   Recompensas tangíveis,{" "}
                   <span className="text-lizard-pink">não só pontos virtuais</span>
