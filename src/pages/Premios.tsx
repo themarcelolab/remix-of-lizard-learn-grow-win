@@ -163,7 +163,7 @@ const Premios = () => {
                     transitionDelay: `${i * 150}ms`,
                   }}
                 >
-                  <item.icon className={`w-6 h-6 text-${item.color} mb-4`} />
+                  
                   <h3 className="text-xl font-bold mb-2">{item.title}</h3>
                   <p className="text-muted-foreground">{item.desc}</p>
                 </div>
