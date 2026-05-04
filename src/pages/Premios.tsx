@@ -232,10 +232,10 @@ const Premios = () => {
                     background: `linear-gradient(135deg, hsl(var(--card)), hsl(var(--card)))`,
                   }}
                 >
-                  <div className={`absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-${m.color} text-white text-xs font-bold uppercase tracking-wide`}>
+                  <div className={`absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full ${m.bgClass} text-white text-xs font-bold uppercase tracking-wide`}>
                     Meta {i + 1}
                   </div>
-                  <p className={`text-4xl font-bold text-${m.color} mb-2`}>{m.count}</p>
+                  <p className={`text-4xl font-bold ${m.textClass} mb-2`}>{m.count}</p>
                   <p className="text-sm text-muted-foreground mb-3">usuários</p>
                   <p className="font-semibold">{m.reward}</p>
                 </div>
