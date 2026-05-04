@@ -262,7 +262,7 @@ const Premios = () => {
               <div className="flex flex-wrap gap-3 justify-center pt-4">
                 <a href="https://lizard-app.online/" target="_blank" rel="noopener noreferrer">
                   <Button size="lg" className="bg-white text-lizard-purple hover:bg-white/90 hover:scale-105 transition-all">
-                    <Users className="w-4 h-4" /> Começar agora
+                    Começar agora
                   </Button>
                 </a>
                 <Button
