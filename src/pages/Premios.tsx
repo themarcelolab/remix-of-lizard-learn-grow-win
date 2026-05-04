@@ -79,7 +79,7 @@ const Premios = () => {
               <div className="space-y-6 animate-fade-in">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tighter">
                   Crescemos juntos,{" "}
-                  <span className="bg-gradient-to-r from-lizard-purple via-lizard-pink to-lizard-orange bg-clip-text text-transparent">
+                  <span className="text-lizard-green">
                     ganhamos juntos
                   </span>
                 </h1>
