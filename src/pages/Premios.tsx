@@ -249,10 +249,6 @@ const Premios = () => {
           <div className="absolute inset-0 bg-gradient-to-br from-lizard-purple via-lizard-pink to-lizard-orange opacity-95" />
           <div className="container mx-auto px-4 relative">
             <div className="max-w-3xl mx-auto text-center text-white space-y-6">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/15 border border-white/30 backdrop-blur-sm">
-                <Gift className="w-4 h-4" />
-                <span className="text-sm font-semibold">Sua indicação vale ouro</span>
-              </div>
 
               <h2 className="text-3xl md:text-5xl font-bold tracking-tighter">
                 Fortaleça uma comunidade que aprende com inteligência
