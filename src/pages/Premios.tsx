@@ -59,9 +59,9 @@ const Premios = () => {
   }, []);
 
   const milestones = [
-    { count: "1.000", reward: "Sorteio de um iPhone", icon: Trophy, color: "lizard-orange" },
-    { count: "5.000", reward: "Experiências exclusivas", icon: Sparkles, color: "lizard-pink" },
-    { count: "10.000", reward: "Viagens internacionais", icon: Plane, color: "lizard-blue" },
+    { count: "1.000", reward: "Sorteio de um iPhone", icon: Trophy, bgClass: "bg-lizard-orange", textClass: "text-lizard-orange" },
+    { count: "5.000", reward: "Experiências exclusivas", icon: Sparkles, bgClass: "bg-lizard-pink", textClass: "text-lizard-pink" },
+    { count: "10.000", reward: "Viagens internacionais", icon: Plane, bgClass: "bg-lizard-blue", textClass: "text-lizard-blue" },
   ];
 
   return (
