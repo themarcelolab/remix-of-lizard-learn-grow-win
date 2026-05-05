@@ -175,7 +175,7 @@ const Premios = () => {
         {/* PORQUE METAS COLETIVAS */}
         <section className="py-20 md:py-28 relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-lizard-pink/5 via-background to-lizard-purple/5" />
-          <div className="container mx-auto px-4 relative">
+          <div className="container mx-auto px-6 md:px-12 lg:px-20 relative">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="relative order-2 lg:order-1">
                 <div className="absolute inset-0 bg-lizard-pink/20 blur-3xl rounded-full" />
