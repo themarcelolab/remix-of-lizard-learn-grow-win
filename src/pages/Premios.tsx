@@ -270,14 +270,17 @@ const Premios = () => {
                     Começar agora
                   </Button>
                 </a>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  onClick={handleInvite}
-                  className="border-white text-white hover:bg-white hover:text-lizard-purple"
-                >
-                  Convidar amigos
-                </Button>
+                <InviteDialog
+                  trigger={
+                    <Button
+                      size="lg"
+                      variant="outline"
+                      className="border-white text-white hover:bg-white hover:text-lizard-purple"
+                    >
+                      Convidar amigos
+                    </Button>
+                  }
+                />
               </div>
             </div>
           </div>
