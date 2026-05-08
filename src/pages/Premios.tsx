@@ -3,6 +3,7 @@ import { Trophy, Users, Gift, Plane, Sparkles, Share2, Target, Heart } from "luc
 import { Button } from "@/components/ui/button";
 import Header from "@/components/landing/Header";
 import Footer from "@/components/landing/Footer";
+import InviteDialog from "@/components/InviteDialog";
 import lizardPrize from "@/assets/lizard-iphone-prize.png";
 import community from "@/assets/community-celebration.jpg";
 
@@ -94,9 +95,13 @@ const Premios = () => {
                   <a href="https://lizard-app.online/" target="_blank" rel="noopener noreferrer">
                     <Button variant="hero" size="lg">Começar agora</Button>
                   </a>
-                  <Button variant="outline" size="lg" onClick={handleInvite}>
-                    Convidar amigos
-                  </Button>
+                  <InviteDialog
+                    trigger={
+                      <Button variant="outline" size="lg">
+                        Convidar amigos
+                      </Button>
+                    }
+                  />
                 </div>
               </div>
 
@@ -265,14 +270,17 @@ const Premios = () => {
                     Começar agora
                   </Button>
                 </a>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  onClick={handleInvite}
-                  className="border-white text-white hover:bg-white hover:text-lizard-purple"
-                >
-                  Convidar amigos
-                </Button>
+                <InviteDialog
+                  trigger={
+                    <Button
+                      size="lg"
+                      variant="outline"
+                      className="border-white text-white hover:bg-white hover:text-lizard-purple"
+                    >
+                      Convidar amigos
+                    </Button>
+                  }
+                />
               </div>
             </div>
           </div>
