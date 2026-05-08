@@ -5,7 +5,7 @@ import Header from "@/components/landing/Header";
 import Footer from "@/components/landing/Footer";
 import InviteDialog from "@/components/InviteDialog";
 import lizardPrize from "@/assets/lizard-iphone-prize.png";
-import community from "@/assets/community-celebration.jpg";
+import community from "@/assets/community-celebration.png";
 
 const handleInvite = async () => {
   const shareData = {
