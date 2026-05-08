@@ -155,7 +155,7 @@ const Premios = () => {
                 {
                   icon: Share2,
                   title: "Como participar",
-                  desc: "Continue focado no seu baralho principal e indique o Lizard para amigos e colegas.",
+                  desc: "Continue focado no seus cards e indique o Lizard para amigos e colegas.",
                   color: "lizard-pink",
                 },
               ].map((item, i) => (
