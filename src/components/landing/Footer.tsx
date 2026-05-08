@@ -21,13 +21,13 @@ const Footer = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                <a href="https://lizard-app.online/" target="_blank" rel="noopener noreferrer">
+                <a href="https://apps.apple.com/us/app/lizard/id6760204253" target="_blank" rel="noopener noreferrer">
                   <Button variant="hero" size="lg" className="gap-3">
                     <Apple className="w-5 h-5" />
                     App Store
                   </Button>
                 </a>
-                <a href="https://lizard-app.online/" target="_blank" rel="noopener noreferrer">
+                <a href="https://play.google.com/store/apps/details?id=com.lizard.app&hl=pt_BR" target="_blank" rel="noopener noreferrer">
                   <Button variant="heroOutline" size="lg" className="gap-3">
                     <Smartphone className="w-5 h-5" />
                     Google Play
