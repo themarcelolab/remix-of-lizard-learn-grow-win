@@ -149,7 +149,7 @@ const Premios = () => {
                 {
                   icon: Trophy,
                   title: "A Recompensa",
-                  desc: "Sorteio de um iPhone entre os membros ativos da comunidade Lizard.",
+                  desc: "Sorteio de um iPhone entre os membros ativos da comunidade.",
                   color: "lizard-orange",
                 },
                 {
