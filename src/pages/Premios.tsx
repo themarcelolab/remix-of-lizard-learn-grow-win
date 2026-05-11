@@ -155,7 +155,7 @@ const Premios = () => {
                 {
                   icon: Share2,
                   title: "Como participar",
-                  desc: "Continue focado no seus cards e indique o Lizard para amigos e colegas.",
+                  desc: "Seja um assinante Premium e participe das campanhas.",
                   color: "lizard-pink",
                 },
               ].map((item, i) => (
